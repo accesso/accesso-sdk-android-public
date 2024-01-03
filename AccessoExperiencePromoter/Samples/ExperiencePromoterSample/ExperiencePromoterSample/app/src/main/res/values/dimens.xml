@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="messages_circular_image_view_width">56dp</dimen>
+    <dimen name="messages_circular_image_view_height">56dp</dimen>
+
+    <dimen name="messages_product_image_view_width">48dp</dimen>
+    <dimen name="messages_prduct_image_view_height">48dp</dimen>
+
+    <dimen name="messages_list_item_image_text_margin">12dp</dimen>
+    <dimen name="messages_list_no_thumbnail_icon_margins">16dp</dimen>
+
+    <dimen name="messages_title_content_margin">8dp</dimen>
+
+    <dimen name="messages_list_item_rounded_corner_image_view_radius">4dp</dimen>
+    <dimen name="messages_list_item_circle_image_diameter">56dp</dimen>
+
+    <dimen name="expiring_message_tag_width">72dp</dimen>
+    <dimen name="expiring_message_tag_elevation">5dp</dimen>
+    <dimen name="expiring_message_tag_padding_topbottom">2dp</dimen>
+    <dimen name="expiring_message_tag_padding_start">16dp</dimen>
+    <dimen name="expiring_message_tag_padding_end">12dp</dimen>
+    <dimen name="expiring_message_tag_textsize">10sp</dimen>
+
+    <dimen name="detail_view_no_hero_title_start_margin">72dp</dimen>
+    <dimen name="detail_view_title_margin_with_expiration">32dp</dimen>
+    <dimen name="detail_view_image_view_height">248dp</dimen>
+    <dimen name="detail_view_toolbar_height">104dp</dimen>
+    <dimen name="detail_view_image_view_partial_height">20dp</dimen>
+    <dimen name="detail_view_favorite_image_margin">5dp</dimen>
+    <dimen name="detail_view_favorite_image_top_margin">40dp</dimen>
+    <dimen name="detail_view_margin">16dp</dimen>
+    <dimen name="detail_view_text_margin">15dp</dimen>
+    <dimen name="detail_view_message_description_margin_top">5dp</dimen>
+    <dimen name="detail_view_message_description_margin_bottom">12dp</dimen>
+    <dimen name="detail_view_text_size_15sp">15sp</dimen>
+    <dimen name="detail_view_text_size_12sp">12sp</dimen>
+    <dimen name="detail_view_text_size_10sp">10sp</dimen>
+    <dimen name="detail_view_white_background_elevation">4dp</dimen>
+    <dimen name="detail_view_expiring_message_top_margin">8dp</dimen>
+    <dimen name="detail_view_message_tittle_top_margin">24dp</dimen>
+    <dimen name="detail_view_image_view_width">376dp</dimen>
+    <dimen name="detail_view_up_button_marginStart">8dp</dimen>
+    <dimen name="detail_view_up_button_marginTop">8dp</dimen>
+    <dimen name="detail_view_up_button_padding">8dp</dimen>
+
+    <dimen name="item_divider_padding">34dp</dimen>
+    <dimen name="featured_message_view_title_margin_sides">16dp</dimen>
+    <dimen name="featured_message_view_title_margin_top">45dp</dimen>
+    <dimen name="featured_message_view_title_margin_bottom">14dp</dimen>
+    <dimen name="offer_detail_image_height">310dp</dimen>
+    <dimen name="default_divider_height">1dp</dimen>
+    <dimen name="text_name_line_spacing_extra">0sp</dimen>
+    <dimen name="text_detail_line_spacing_extra">0sp</dimen>
+    <dimen name="text_label_line_spacing_extra">0sp</dimen>
+    <dimen name="text_body_line_spacing_extra">0sp</dimen>
+    <dimen name="text_headline_line_spacing_extra">0sp</dimen>
+    <dimen name="text_category_line_spacing_extra">0sp</dimen>
+</resources>

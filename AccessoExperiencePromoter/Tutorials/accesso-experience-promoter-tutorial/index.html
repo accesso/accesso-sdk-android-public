@@ -1,0 +1,382 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Module Experience Promoter - Developer User Guide for Accesso SDK for Android</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="accesso-experience-promoter-tutorial"
+                  title="Module Experience Promoter - Developer User Guide for Accesso SDK for Android"
+                  environment="web"
+                  feedback-link="https://github.com/accesso/accesso-sdk-android">
+    
+      <google-codelab-step label="Installing the SDK" duration="10">
+        <h2 is-upgraded>Installation</h2>
+<ol type="1">
+<li>Place the <strong>AccessoExperiencePromoter-release.aar</strong> file within the <em>app/libs</em> directory.</li>
+<li>Include a dependency to the the SDK in the module-level <em>build.gradle</em> file and add required dependencies</li>
+</ol>
+<pre><code language="language-groovy" class="language-groovy">    implementation(files(&#34;libs/AccessoExperiencePromoter-release.aar&#34;))
+    implementation(&#34;com.squareup.retrofit2:retrofit:2.9.0&#34;)
+    implementation(&#34;com.squareup.retrofit2:converter-gson:2.9.0&#34;)
+    implementation(&#34;org.altbeacon:android-beacon-library:2.19.4&#34;)
+</code></pre>
+<ol type="1" start="3">
+<li>Add required permissions and replace theme.</li>
+</ol>
+<pre><code language="language-xml" class="language-xml">    &lt;manifest&gt;
+        &lt;uses-permission android:name=&#34;android.permission.ACCESS_COARSE_LOCATION&#34; /&gt;
+        &lt;uses-permission android:name=&#34;android.permission.ACCESS_FINE_LOCATION&#34; /&gt;
+        &lt;uses-permission android:name=&#34;android.permission.INTERNET&#34; /&gt;
+        &lt;application&gt;
+            tools:replace=&#34;android:theme&#34;
+        &lt;/application&gt;
+    &lt;/manifest&gt;
+</code></pre>
+<ol type="1" start="4">
+<li>Sync gradle.</li>
+<li>Add <code>accesso-services.json</code> to the <code>assets</code> directory with all fields filled out</li>
+</ol>
+<pre><code language="language-json" class="language-json">{
+  &#34;VENUE_ID&#34;: &#34;&#34;,
+  &#34;APP_ID&#34;: &#34;&#34;,
+  &#34;FIREBASE_CONFIG&#34;: &#34;google-service.json&#34;,
+  &#34;BASE_URL&#34;: &#34;https://host.te2.biz&#34;,
+  &#34;PREFERRED_LANGUAGE&#34;: &#34;en&#34;,
+  &#34;IDENTITY_USERNAME&#34;: &#34;&#34;,
+  &#34;IDENTITY_PASSWORD&#34;: &#34;&#34;,
+  &#34;USERNAME&#34;: &#34;&#34;,
+  &#34;PASSWORD&#34;: &#34;&#34;
+}
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Using Messaging" duration="10">
+        <h2 is-upgraded>Messaging</h2>
+<ol type="1">
+<li>Configure <strong>AccessoCore</strong>. This must be done before using any Accesso SDK features.</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">        AccessoCore
+            .setAppUserId(appUserId)
+            .setApplicationContext(applicationContext)
+            .setActivity(activity)
+            .build()
+</code></pre>
+<ol type="1" start="2">
+<li>Create an instance of AccessoExperiencePromoter</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">        var accessoExperiencePromoter = AccessoExperiencePromoter()
+</code></pre>
+<ol type="1" start="3">
+<li>Create and activate a message in Control Room</li>
+</ol>
+<p class="image-container"><img alt="cr_image" src="img/2057b1a54b6cbfb9.webp"></p>
+<ol type="1" start="4">
+<li>Retrieve Messages</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">    coroutineScope.launch {
+        try {
+            val messages = accessoExperiencePromoter.getMessages().body()
+        } catch (e: Exception) {
+            
+        }
+    }
+</code></pre>
+<ol type="1" start="5">
+<li>Display list of Messages. Messages are returned as a <code>Response&lt;List&lt;MessagesResponse&gt;&gt;</code> so call the <code>.body()</code> function on <code>messages</code> to get a <code>List&lt;MessageResponse?&gt;</code> and display the contents in a <code>Recyclerview</code> however you wish.</li>
+</ol>
+<p class="image-container"><img alt="poi_list" src="img/37478974bc32e3b.webp"></p>
+<ol type="1" start="6">
+<li>Display Message Details screens. The <code>MessageResponse</code> has much more data than can fit on a list item, so you may want to dislay a message details screen for each message that the app user taps into. This can be used to display more detailed copy, a larger image and much more.</li>
+</ol>
+<p class="image-container"><img alt="message_detail" src="img/9bc222e584bd2991.webp"></p>
+<ol type="1" start="7">
+<li>Set up push messages and retrieve a single message by searching for it via the message ID.</li>
+</ol>
+<ul>
+<li>Setup a push notification service of your choice (such as <a href="https://firebase.google.com/docs/cloud-messaging/android/first-message" target="_blank">Firebase</a>)</li>
+<li>Prompt the user to enable push notifications through your application</li>
+<li>Once a notification is received call getMessageByIdResponse() to get the specific message</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">        coroutineScope.launch {
+        try {
+            val message = accessoExperiencePromoter.getMessageById(messageId: String).body()
+        } catch (e: Exception) {
+            
+        }
+    }
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Prompting for permissions" duration="0">
+        <h2 is-upgraded>Prompt for location and bluetooth permissions</h2>
+<ol type="1">
+<li>Use the helper function prompt the user for bluetooth permissions</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">viewModelScope.launch {
+    accessoExperiencePromoter.promptForLocationPermission()
+}
+</code></pre>
+<ol type="1" start="2">
+<li>Use the helper function prompt the user for bluetooth permissions</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">viewModelScope.launch {
+    accessoExperiencePromoter.promptForLocationPermission()
+}
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Using Location" duration="10">
+        <h2 is-upgraded>Location</h2>
+<ol type="1">
+<li>Start updating the user&#39;s location.</li>
+</ol>
+<ul>
+<li>This can be done by calling the function after configuring the SDK.</li>
+<li>Note that if you did not prompt for location permission or if it was denied, the user will be prompted again after making this function call.</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">  AccessoExperiencePromoter.startUpdatingLocation(
+    distanceMeters = distanceMeters,
+    postLocationIntervalSecondsArg = postLocationIntervalSeconds,
+    activity = activity
+  )
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Using Beacons" duration="10">
+        <h2 is-upgraded>Beacons</h2>
+<ol type="1">
+<li>Add beacons that are installed at your venue to Control Room</li>
+</ol>
+<p class="image-container"><img alt="cr_beacon" src="img/5ee0d51686f54df5.webp"></p>
+<ol type="1" start="2">
+<li>Retrieve the beacon regions<pre><code language="language-kotlin" class="language-kotlin">     viewModelScope.launch {
+         try {
+             val beaconRegions = accessoExperiencePromoter.getBeaconRegions().body()
+         } catch (ex: java.lang.Exception) {
+
+         }
+     }
+</code></pre>
+</li>
+<li>Tell the <strong>AccessoExperiencePromoter SDK</strong> to start listening for beacons.</li>
+</ol>
+<ul>
+<li>You may call <code>startListeningForBeaconRegions()</code> at any time by passing the <code>beaconRegions</code> retrieved in part 2 along with an instance of a beacon listener</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">    private val beaconListener: (BeaconRegion, Int) -&gt; Unit = { beaconRegion, state -&gt;
+        if (state == ExitEnter.ENTER.ordinal) {
+            beaconEnterExitMap[beaconRegion] = true
+        } else {
+            beaconEnterExitMap[beaconRegion] = false
+        }
+        beaconEnterExitMutableLiveData.postValue(Event(beaconEnterExitMap))
+    }
+
+    viewModelScope.launch {
+        accessoExperiencePromoter.startListeningForBeaconRegions(beaconRegions, beaconListener)
+    }
+</code></pre>
+<ul>
+<li>Example: List of beacon regions. A green dot signifies the device has entered the range of a beacon region.</li>
+</ul>
+<p class="image-container"><img alt="beacon_list" src="img/2b337b72cf8083c2.webp"></p>
+<ol type="1" start="4">
+<li>Stop listening for beacons. You can either pass the desired beacon regions to stop listening for or if you do not pass an argument, the SDK will stop listening to all beacon regions.</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">     coroutineScope.launch {
+          accessoExperiencePromoter.stopListeningForBeaconRegions()
+     }
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Using Points of Interest" duration="10">
+        <h2 is-upgraded>Points of Interest</h2>
+<ol type="1">
+<li>Set up points of interest for your venue in Control Room</li>
+</ol>
+<p class="image-container"><img alt="Screenshot 2023-07-05 at 12 57 15 PM" style="width: 859.00px" src="img/14ea755665feb762.png"></p>
+<ol type="1" start="2">
+<li>Retrieve points of interest</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">    coroutineScope.launch {
+        val pointsOfInterest: Response&lt;List&lt;PointOfInterest&gt;&gt; = accessoExperiencePromoter.getPointsOfInterest()
+    }
+</code></pre>
+<ol type="1" start="3">
+<li>Retrieve point of interest categories.</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">    coroutineScope.launch {
+        val displayCategories: DisplayCategories = accessoExperiencePromoter.getDisplayCategories().body()
+        val categories = displayCategories.categories
+        val pointsOfInterest = displayCategories.poi
+    }
+</code></pre>
+<ol type="1" start="4">
+<li>Display the points of interest in your app in a recyclerview or similar.</li>
+</ol>
+<p class="image-container"><img alt="poi_list" src="img/d25a6e0d5f4c98e1.webp"></p>
+<ol type="1" start="5">
+<li>Display a point of interest detail page if so desired.</li>
+</ol>
+<p class="image-container"><img alt="poi_detail" src="img/bf88b13c8bf744da.webp"></p>
+<ol type="1" start="6">
+<li>Implement point of interest text search by calling the following function.</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">    coroutineScope.launch {
+        val pointOfInterests: List&lt;PointOfInterest&gt; = 
+            accessoExperiencePromoter.searchPointsOfInterest(
+                pointsOfInterest: List&lt;PointOfInterest&gt;, 
+                searchCriteria: String
+            )
+    }
+</code></pre>
+<ol type="1" start="7">
+<li>Implement filtering of points of interest by categories by calling the following function.</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">    coroutineScope.launch {
+        val filteredPointsOfInterest: List&lt;PointOfInterest&gt; = 
+            accessoExperiencePromoter.getPointsOfInterestByCategories(
+                categories: List&lt;Category&gt;, 
+                pointsOfInterest: List&lt;PointOfInterest&gt;
+            )
+    }
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Using Tracking" duration="10">
+        <h2 is-upgraded>Tracking</h2>
+<ul>
+<li>Use the full power of the <strong>AccessoExperiencePromoter SDK</strong> by updating our backend services with your app users tracking data. This valuable data can be used to target user&#39;s for segmented messages among other uses.</li>
+<li>Track entering or exiting the area of a beacon region.</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">    coroutineScope.launch{
+        try {
+            val trackerApiResponse: Response&lt;TrackerAPIResponse&gt; = 
+                accessoExperiencePromoter.trackBeaconDetectChange(
+                   BeaconStatus.ENTER, 
+                   beaconEvent
+                )
+        } catch (e: Exception) {
+            
+        }
+    }
+</code></pre>
+<ul>
+<li>Track Location updates.</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">    coroutineScope.launch {
+        try {
+            val trackerApiResponse: Response&lt;TrackerAPIResponse&gt; = 
+                accessoExperiencePromoter.trackDeviceLocation(regionEvent)
+        } catch (e: Exception) {
+            
+        }
+    }
+</code></pre>
+<ul>
+<li>Track a message action such as receiving a push notification while the app is open, or closed, or a message is received or read.</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">     coroutineScope.launch {
+        try {
+            val trackerApiResponse: Response&lt;TrackerAPIResponse&gt; = 
+                accessoExperiencePromoter.trackMessageAction(messageActionEvent)
+        } catch (e: Exception) {
+            
+        }
+     }
+</code></pre>
+<ul>
+<li>Track that a message link is tapped.</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">     coroutineScope.launch {
+        try {
+            val trackerApiResponse: Response&lt;TrackerAPIResponse&gt; = 
+                accessoExperiencePromoter.trackMessageLinkTapped(messageLinkTappedEvent)
+        } catch (e: Exception) {
+    
+        }
+     }
+</code></pre>
+<ul>
+<li>Track the app&#39;s notification state.</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">     coroutineScope.launch {
+        try {
+            val trackerApiResponse: Response&lt;TrackerAPIResponse&gt; = 
+                accessoExperiencePromoter.trackAppNotificationState(appNotificationStateEvent)
+        } catch (e: Exception) {
+    
+        }
+     }
+</code></pre>
+<h2 is-upgraded>Events</h2>
+<ul>
+<li>Retrieving and showing Events</li>
+<li>If you want the SDK to handle retrieving events and handling all UI components including a list and detail screen for events, you have the option to simply just call showEvents like so.</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">try {
+    accessoExperiencePromoter.showEvents(context = context, days =  10)
+} catch (e: Exception) {
+    
+}
+</code></pre>
+<ul>
+<li>This will open a new activity, make the API call and load all the data necessary using a viewmodel.</li>
+<li>Or you can choose to retrieve the events manually if needed with the getEvents call.</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">coroutineScope.launch {
+    try {
+        val events = accessoExperiencePromoter.getEvents()
+     } catch (e: Exception) {
+    }
+}
+
+* Search for events via a string of search terms
+```kotlin
+    val searchedEvents: List&lt;Event&gt; = accessoExperiencePromoter.searchEvents(&#34;Search text&#34;)
+</code></pre>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
