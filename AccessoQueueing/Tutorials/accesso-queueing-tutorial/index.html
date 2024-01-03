@@ -1,0 +1,117 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Module Queueing - Developer User Guide for Accesso SDK for Android</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="accesso-queueing-tutorial"
+                  title="Module Queueing - Developer User Guide for Accesso SDK for Android"
+                  environment="web"
+                  feedback-link="https://github.com/accesso/accesso-sdk-android">
+    
+      <google-codelab-step label="Installing the SDK" duration="10">
+        <h2 is-upgraded>Installation</h2>
+<ol type="1">
+<li>Place the <strong>AccessoEntitlements-release.aar</strong> file within the <em>app/libs</em> directory.</li>
+<li>Include a dependency to the the SDK in the module-level <em>build.gradle</em> file and add required dependencies</li>
+</ol>
+<pre><code language="language-groovy" class="language-groovy">    implementation(files(&#34;libs/AccessoQueueing-release.aar&#34;))
+    implementation(&#34;com.squareup.retrofit2:retrofit:2.9.0&#34;)
+    implementation(&#34;com.squareup.retrofit2:converter-gson:2.9.0&#34;)
+</code></pre>
+<ol type="1" start="3">
+<li>Add required permissions and replace theme.</li>
+</ol>
+<pre><code language="language-xml" class="language-xml">    &lt;manifest&gt;
+        &lt;uses-permission android:name=&#34;android.permission.INTERNET&#34; /&gt;
+        &lt;application&gt;
+            tools:replace=&#34;android:theme&#34;
+        &lt;/application&gt;
+    &lt;/manifest&gt;
+</code></pre>
+<ol type="1" start="4">
+<li>Sync gradle.</li>
+<li>Add <code>accesso-services.json</code> to the <code>assets</code> directory with all fields filled out</li>
+</ol>
+<pre><code language="language-json" class="language-json">{
+   &#34;VENUE_ID&#34;: &#34;&#34;,
+   &#34;APP_ID&#34;: &#34;&#34;,
+   &#34;FIREBASE_CONFIG&#34;: &#34;google-service.json&#34;,
+   &#34;BASE_URL&#34;: &#34;https://host.te2.biz&#34;,
+   &#34;PREFERRED_LANGUAGE&#34;: &#34;en&#34;,
+   &#34;IDENTITY_USERNAME&#34;: &#34;&#34;,
+   &#34;IDENTITY_PASSWORD&#34;: &#34;&#34;,
+   &#34;USERNAME&#34;: &#34;&#34;,
+   &#34;PASSWORD&#34;: &#34;&#34;, 
+   &#34;ENTITLEMENTS_BASE_URL&#34;: &#34;https://host.te2.biz&#34;
+}
+</code></pre>
+<ol type="1" start="6">
+<li>Configure the <strong>AccessoCore SDK</strong>. This must be done before using any features of the SDK.</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">        AccessoCore
+            .setApplicationContext(applicationContext)
+            .setActivity(activity)
+            .build()
+</code></pre>
+<ol type="1" start="7">
+<li>Create new instance of the AccessoQueueing class</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">    val accessoQueueing: AccessoQueueing = AccessoQueueing()
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Using queueing" duration="10">
+        <h2 is-upgraded>Get Attractions</h2>
+<pre><code language="language-kotlin" class="language-kotlin">    coroutineScope.launch {
+        try {
+            val attractions: List&lt;Attraction&gt; = accessoQueueing.getAttractions()
+        } catch (e: Exception) {
+            //handle exception
+        }
+}
+</code></pre>
+<h2 is-upgraded>Get Attraction by ID</h2>
+<pre><code language="language-kotlin" class="language-kotlin">    coroutineScope.launch {
+        try {
+            val attraction: Attraction = accessoQueueing.getAttractionById(&#34;ID123&#34;)
+        } catch (e: Exception) {
+            //handle exception
+        }
+}
+</code></pre>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

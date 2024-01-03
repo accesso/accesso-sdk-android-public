@@ -1,0 +1,1 @@
+sourceset_dependencies='{":AccessoQueueing:dokkaHtml/androidTestRelease":[],":AccessoQueueing:dokkaHtml/debug":[],":AccessoQueueing:dokkaHtml/main":[],":AccessoQueueing:dokkaHtml/release":[],":AccessoQueueing:dokkaHtml/testFixtures":[],":AccessoQueueing:dokkaHtml/testFixturesDebug":[],":AccessoQueueing:dokkaHtml/testFixturesRelease":[]}'
