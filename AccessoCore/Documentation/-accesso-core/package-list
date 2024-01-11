@@ -1,0 +1,52 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.accesso.error////PointingToDeclaration/-accesso-core/com.accesso.error/index.html
+$dokka.location:com.accesso.error/AccessoSDKInitError///PointingToDeclaration/-accesso-core/com.accesso.error/-accesso-s-d-k-init-error/index.html
+$dokka.location:com.accesso.error/AccessoSDKInitError/AccessoSDKInitError/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.error/-accesso-s-d-k-init-error/-accesso-s-d-k-init-error.html
+$dokka.location:com.accesso.error/AccessoSDKNetworkException///PointingToDeclaration/-accesso-core/com.accesso.error/-accesso-s-d-k-network-exception/index.html
+$dokka.location:com.accesso.error/AccessoSDKNetworkException/AccessoSDKNetworkException/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.error/-accesso-s-d-k-network-exception/-accesso-s-d-k-network-exception.html
+$dokka.location:com.accesso.error/AccessoServicesNotFoundException///PointingToDeclaration/-accesso-core/com.accesso.error/-accesso-services-not-found-exception/index.html
+$dokka.location:com.accesso.error/AccessoServicesNotFoundException/AccessoServicesNotFoundException/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.error/-accesso-services-not-found-exception/-accesso-services-not-found-exception.html
+$dokka.location:com.accesso.model////PointingToDeclaration/-accesso-core/com.accesso.model/index.html
+$dokka.location:com.accesso.model/DateRange///PointingToDeclaration/-accesso-core/com.accesso.model/-date-range/index.html
+$dokka.location:com.accesso.model/DateRange/DateRange/#java.util.Date#java.util.Date/PointingToDeclaration/-accesso-core/com.accesso.model/-date-range/-date-range.html
+$dokka.location:com.accesso.model/DateRange/end/#/PointingToDeclaration/-accesso-core/com.accesso.model/-date-range/end.html
+$dokka.location:com.accesso.model/DateRange/intersects/#com.accesso.model.DateRange/PointingToDeclaration/-accesso-core/com.accesso.model/-date-range/intersects.html
+$dokka.location:com.accesso.model/DateRange/start/#/PointingToDeclaration/-accesso-core/com.accesso.model/-date-range/start.html
+$dokka.location:com.accesso.networking.model////PointingToDeclaration/-accesso-core/com.accesso.networking.model/index.html
+$dokka.location:com.accesso.networking.model/BeaconRegion///PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/index.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/BeaconRegion/#kotlin.String?#kotlin.String?#kotlin.Int?#kotlin.Int?#kotlin.String?#kotlin.Int?#kotlin.Int?#kotlin.Boolean?/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/-beacon-region.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/id/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/id.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/major/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/major.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/mfrCode/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/mfr-code.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/minor/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/minor.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/outOfVenue/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/out-of-venue.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/proximityUUID/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/proximity-u-u-i-d.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/signalPower/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/signal-power.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/ttl/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/ttl.html
+$dokka.location:com.accesso.util////PointingToDeclaration/-accesso-core/com.accesso.util/index.html
+$dokka.location:com.accesso.util//accessoCoroutineExceptionHandlerLogging/#/PointingToDeclaration/-accesso-core/com.accesso.util/accesso-coroutine-exception-handler-logging.html
+$dokka.location:com.accesso.util/LoggerLevel.DEBUG///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-accesso-core/com.accesso.util/-logger-level/-d-e-b-u-g/index.html
+$dokka.location:com.accesso.util/LoggerLevel.ERROR///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-accesso-core/com.accesso.util/-logger-level/-e-r-r-o-r/index.html
+$dokka.location:com.accesso.util/LoggerLevel.INFO///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-accesso-core/com.accesso.util/-logger-level/-i-n-f-o/index.html
+$dokka.location:com.accesso.util/LoggerLevel.WARN///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-accesso-core/com.accesso.util/-logger-level/-w-a-r-n/index.html
+$dokka.location:com.accesso.util/LoggerLevel///PointingToDeclaration/-accesso-core/com.accesso.util/-logger-level/index.html
+$dokka.location:com.accesso.util/LoggerLevel/value/#/PointingToDeclaration/-accesso-core/com.accesso.util/-logger-level/value.html
+$dokka.location:com.accesso.util/LoggerLevel/valueOf/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.util/-logger-level/value-of.html
+$dokka.location:com.accesso.util/LoggerLevel/values/#/PointingToDeclaration/-accesso-core/com.accesso.util/-logger-level/values.html
+$dokka.location:com.accesso////PointingToDeclaration/-accesso-core/com.accesso/index.html
+$dokka.location:com.accesso/AccessoCore///PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/index.html
+$dokka.location:com.accesso/AccessoCore/build/#/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/build.html
+$dokka.location:com.accesso/AccessoCore/scanBarcode/#/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/scan-barcode.html
+$dokka.location:com.accesso/AccessoCore/setActivity/#android.app.Activity?/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/set-activity.html
+$dokka.location:com.accesso/AccessoCore/setAppUserId/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/set-app-user-id.html
+$dokka.location:com.accesso/AccessoCore/setApplicationContext/#android.content.Context/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/set-application-context.html
+$dokka.location:com.accesso/AccessoCore/setBeaconManagerWrapper/#com.accesso.BeaconManagerWrapper/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/set-beacon-manager-wrapper.html
+$dokka.location:com.accesso/AccessoCore/setLogLevel/#com.accesso.util.LoggerLevel/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/set-log-level.html
+$dokka.location:com.accesso/AccessoCore/setOnBeaconRegionDetection/#kotlin.Function2[com.accesso.networking.model.BeaconRegion,kotlin.Int,kotlin.Unit]/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/set-on-beacon-region-detection.html
+com.accesso
+com.accesso.error
+com.accesso.model
+com.accesso.networking.model
+com.accesso.util
+

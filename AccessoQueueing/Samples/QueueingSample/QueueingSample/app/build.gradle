@@ -1,0 +1,79 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+}
+
+apply plugin: 'kotlin-parcelize'
+
+android {
+    namespace 'com.accesso.queueingsample'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.accesso.queueingsample"
+        minSdk 29
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildFeatures {
+        compose true
+        viewBinding = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            testCoverageEnabled true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.4.0'
+    }
+}
+
+dependencies {
+    implementation "androidx.core:core-ktx:${Versions.androidxCoreKtx}"
+    implementation "com.google.android.material:material:${Versions.googleAndroidMaterial}"
+
+    // Networking
+    api("com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}")
+    api("com.squareup.retrofit2:converter-gson:${Versions.retrofitVersion}")
+    api("com.squareup.retrofit2:adapter-rxjava:${Versions.retrofitVersion}")
+    implementation ("com.squareup.moshi:moshi:${Versions.moshiVersion}")
+    implementation("com.squareup.moshi:moshi-adapters:1.13.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    api("com.github.bumptech.glide:glide:4.12.0")
+    api("com.github.bumptech.glide:compiler:4.12.0")
+    implementation "com.github.bumptech.glide:compose:1.0.0-alpha.1"
+
+    // Jetpack Compose libs
+    implementation 'androidx.activity:activity-compose:1.7.2'
+    implementation "androidx.compose.ui:ui:1.4.3"
+    implementation "androidx.compose.ui:ui-tooling-preview:1.4.3"
+    implementation "androidx.compose.material:material:1.4.3"
+    implementation "androidx.compose.runtime:runtime-livedata:1.5.0-alpha01"
+    implementation "androidx.navigation:navigation-compose:2.6.0"
+
+    implementation(files("libs/AccessoQueueing.aar"))
+    implementation(files("libs/AccessoCore.aar"))
+    implementation("androidx.security:security-crypto:1.1.0-alpha06")
+}

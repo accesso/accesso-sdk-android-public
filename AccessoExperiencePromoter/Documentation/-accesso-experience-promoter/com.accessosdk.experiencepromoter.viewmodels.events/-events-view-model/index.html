@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>EventsViewModel</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>AccessoExperiencePromoter</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":AccessoExperiencePromoter:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="AccessoExperiencePromoter::com.accessosdk.experiencepromoter.viewmodels.events/EventsViewModel///PointingToDeclaration//1858809255">
+  <div class="breadcrumbs"><a href="../../../index.html">AccessoExperiencePromoter</a><span class="delimiter">/</span><a href="../index.html">com.accessosdk.experiencepromoter.viewmodels.events</a><span class="delimiter">/</span><span class="current">EventsViewModel</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Events</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Model</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">EventsViewModel</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dialogViewModel<span class="token operator">: </span><a href="../-dialog-view-model/index.html">DialogViewModel</a></span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel.html">ViewModel</a>, <a href="../-events-callbacks/index.html">EventsCallbacks</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1076487567%2FConstructors%2F1858809255" anchor-label="EventsViewModel" id="1076487567%2FConstructors%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-events-view-model.html"><span>Events</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1076487567%2FConstructors%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dialogViewModel<span class="token operator">: </span><a href="../-dialog-view-model/index.html">DialogViewModel</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1399079455%2FClasslikes%2F1858809255" anchor-label="Companion" id="1399079455%2FClasslikes%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1399079455%2FClasslikes%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1858218358%2FFunctions%2F1858809255" anchor-label="clearEventsSearch" id="-1858218358%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="clear-events-search.html"><span>clear</span><wbr></wbr><span>Events</span><wbr></wbr><span><span>Search</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1858218358%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="clear-events-search.html"><span class="token function">clearEventsSearch</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-746751094%2FFunctions%2F1858809255" anchor-label="combineFilterResults" id="-746751094%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="combine-filter-results.html"><span>combine</span><wbr></wbr><span>Filter</span><wbr></wbr><span><span>Results</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-746751094%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="combine-filter-results.html"><span class="token function">combineFilterResults</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">filterResults1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.accessosdk.experiencepromoter.model.events/-event/index.html">Event</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">filterResults2<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.accessosdk.experiencepromoter.model.events/-event/index.html">Event</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.accessosdk.experiencepromoter.model.events/-event/index.html">Event</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-798851595%2FFunctions%2F1858809255" anchor-label="filterByCategories" id="-798851595%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="filter-by-categories.html"><span>filter</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Categories</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-798851595%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="filter-by-categories.html"><span class="token function">filterByCategories</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">selectedCategories<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.accessosdk.experiencepromoter.model.eventsCategories/-event-category-item/index.html">EventCategoryItem</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">eventsResponse<span class="token operator">: </span><a href="../../com.accessosdk.experiencepromoter.model.events/-events-response/index.html">EventsResponse</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1287849466%2FFunctions%2F1858809255" anchor-label="filterEventsByDate" id="-1287849466%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="filter-events-by-date.html"><span>filter</span><wbr></wbr><span>Events</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1287849466%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/RequiresApi.html"><span class="token annotation builtin">RequiresApi</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">26</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="filter-events-by-date.html"><span class="token function">filterEventsByDate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">eventsResponse<span class="token operator">: </span><a href="../../com.accessosdk.experiencepromoter.model.events/-events-response/index.html">EventsResponse</a><span class="token punctuation">, </span></span><span class="parameter ">selectedDate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-105833758%2FFunctions%2F1858809255" anchor-label="getEventCategories" id="-105833758%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-event-categories.html"><span>get</span><wbr></wbr><span>Event</span><wbr></wbr><span><span>Categories</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-105833758%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-event-categories.html"><span class="token function">getEventCategories</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1121636796%2FFunctions%2F1858809255" anchor-label="getEvents" id="1121636796%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-events.html"><span>get</span><wbr></wbr><span><span>Events</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1121636796%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-events.html"><span class="token function">getEvents</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">days<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><b>getEvents</b> - fetches events from the <b>AccessoExperiencePromoter SDK</b> emits value as a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a> of <a href="../../com.accessosdk.experiencepromoter.model.events/-event/index.html">Event</a>s to live data</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1024746478%2FFunctions%2F1858809255" anchor-label="getPOI" id="1024746478%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-p-o-i.html"><span>get</span><wbr></wbr><span><span>POI</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1024746478%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-p-o-i.html"><span class="token function">getPOI</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="799269723%2FFunctions%2F1858809255" anchor-label="hideEventsByDateRange" id="799269723%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hide-events-by-date-range.html"><span>hide</span><wbr></wbr><span>Events</span><wbr></wbr><span>By</span><wbr></wbr><span>Date</span><wbr></wbr><span><span>Range</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="799269723%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="hide-events-by-date-range.html"><span class="token function">hideEventsByDateRange</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2024239195%2FFunctions%2F1858809255" anchor-label="hideEventsFilteredByCategory" id="2024239195%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hide-events-filtered-by-category.html"><span>hide</span><wbr></wbr><span>Events</span><wbr></wbr><span>Filtered</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Category</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2024239195%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="hide-events-filtered-by-category.html"><span class="token function">hideEventsFilteredByCategory</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1096793349%2FFunctions%2F1858809255" anchor-label="hideEventsSearchResults" id="1096793349%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hide-events-search-results.html"><span>hide</span><wbr></wbr><span>Events</span><wbr></wbr><span>Search</span><wbr></wbr><span><span>Results</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1096793349%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="hide-events-search-results.html"><span class="token function">hideEventsSearchResults</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2058518555%2FFunctions%2F1858809255" anchor-label="onSearchTextChanged" id="-2058518555%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-search-text-changed.html"><span>on</span><wbr></wbr><span>Search</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2058518555%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-search-text-changed.html"><span class="token function">onSearchTextChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">text<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">eventsResponse<span class="token operator">: </span><a href="../../com.accessosdk.experiencepromoter.model.events/-events-response/index.html">EventsResponse</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1255751044%2FFunctions%2F1858809255" anchor-label="searchEvents" id="-1255751044%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="search-events.html"><span>search</span><wbr></wbr><span><span>Events</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1255751044%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="search-events.html"><span class="token function">searchEvents</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">searchText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">eventsResponse<span class="token operator">: </span><a href="../../com.accessosdk.experiencepromoter.model.events/-events-response/index.html">EventsResponse</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1768847899%2FFunctions%2F1858809255" anchor-label="setSelectedEvent" id="1768847899%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-selected-event.html"><span>set</span><wbr></wbr><span>Selected</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1768847899%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-selected-event.html"><span class="token function">setSelectedEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="../../com.accessosdk.experiencepromoter.model.events/-event/index.html">Event</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="199788374%2FFunctions%2F1858809255" anchor-label="showEventsByDateRange" id="199788374%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-events-by-date-range.html"><span>show</span><wbr></wbr><span>Events</span><wbr></wbr><span>By</span><wbr></wbr><span>Date</span><wbr></wbr><span><span>Range</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="199788374%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="show-events-by-date-range.html"><span class="token function">showEventsByDateRange</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="740578577%2FFunctions%2F1858809255" anchor-label="showEventSearchResults" id="740578577%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-event-search-results.html"><span>show</span><wbr></wbr><span>Event</span><wbr></wbr><span>Search</span><wbr></wbr><span><span>Results</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="740578577%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="show-event-search-results.html"><span class="token function">showEventSearchResults</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1094478848%2FFunctions%2F1858809255" anchor-label="showEventsFilteredByCategory" id="1094478848%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-events-filtered-by-category.html"><span>show</span><wbr></wbr><span>Events</span><wbr></wbr><span>Filtered</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Category</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1094478848%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="show-events-filtered-by-category.html"><span class="token function">showEventsFilteredByCategory</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1483631648%2FFunctions%2F1858809255" anchor-label="updateSearchText" id="1483631648%2FFunctions%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-search-text.html"><span>update</span><wbr></wbr><span>Search</span><wbr></wbr><span><span>Text</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1483631648%2FFunctions%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="update-search-text.html"><span class="token function">updateSearchText</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">text<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-926530068%2FProperties%2F1858809255" anchor-label="eventCategoriesLiveData" id="-926530068%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="event-categories-live-data.html"><span>event</span><wbr></wbr><span>Categories</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-926530068%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="event-categories-live-data.html">eventCategoriesLiveData</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.accessosdk.experiencepromoter.model.eventsCategories/-event-category-list/index.html">EventCategoryList</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1043601143%2FProperties%2F1858809255" anchor-label="eventsFilteredByCategoriesLiveData" id="-1043601143%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="events-filtered-by-categories-live-data.html"><span>events</span><wbr></wbr><span>Filtered</span><wbr></wbr><span>By</span><wbr></wbr><span>Categories</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1043601143%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="events-filtered-by-categories-live-data.html">eventsFilteredByCategoriesLiveData</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.accessosdk.experiencepromoter.model.events/-event/index.html">Event</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-641134537%2FProperties%2F1858809255" anchor-label="eventsFilteredByDateLiveData" id="-641134537%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="events-filtered-by-date-live-data.html"><span>events</span><wbr></wbr><span>Filtered</span><wbr></wbr><span>By</span><wbr></wbr><span>Date</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-641134537%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="events-filtered-by-date-live-data.html">eventsFilteredByDateLiveData</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.accessosdk.experiencepromoter.model.events/-event/index.html">Event</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="986173299%2FProperties%2F1858809255" anchor-label="eventsLiveData" id="986173299%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="events-live-data.html"><span>events</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="986173299%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="events-live-data.html">eventsLiveData</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.accessosdk.experiencepromoter.model.events/-events-response/index.html">EventsResponse</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-823968696%2FProperties%2F1858809255" anchor-label="eventsResponse" id="-823968696%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="events-response.html"><span>events</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-823968696%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">lateinit </span><span class="token keyword">var </span><a href="events-response.html">eventsResponse</a><span class="token operator">: </span><a href="../../com.accessosdk.experiencepromoter.model.events/-events-response/index.html">EventsResponse</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-745971699%2FProperties%2F1858809255" anchor-label="eventsSearchResultsLiveData" id="-745971699%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="events-search-results-live-data.html"><span>events</span><wbr></wbr><span>Search</span><wbr></wbr><span>Results</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-745971699%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="events-search-results-live-data.html">eventsSearchResultsLiveData</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.accessosdk.experiencepromoter.model.events/-event/index.html">Event</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1841173606%2FProperties%2F1858809255" anchor-label="isLoading" id="1841173606%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-loading.html"><span>is</span><wbr></wbr><span><span>Loading</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1841173606%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-loading.html">isLoading</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1335258872%2FProperties%2F1858809255" anchor-label="poiLiveData" id="1335258872%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="poi-live-data.html"><span>poi</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1335258872%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="poi-live-data.html">poiLiveData</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.accessosdk.experiencepromoter.model/-point-of-interest/index.html">PointOfInterest</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-922163561%2FProperties%2F1858809255" anchor-label="searchTextLiveData" id="-922163561%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="search-text-live-data.html"><span>search</span><wbr></wbr><span>Text</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-922163561%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="search-text-live-data.html">searchTextLiveData</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1205769571%2FProperties%2F1858809255" anchor-label="selectedEventLiveData" id="1205769571%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="selected-event-live-data.html"><span>selected</span><wbr></wbr><span>Event</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1205769571%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="selected-event-live-data.html">selectedEventLiveData</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.accessosdk.experiencepromoter.model.events/-event/index.html">Event</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1315349551%2FProperties%2F1858809255" anchor-label="showEventsByDateLiveData" id="-1315349551%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-events-by-date-live-data.html"><span>show</span><wbr></wbr><span>Events</span><wbr></wbr><span>By</span><wbr></wbr><span>Date</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1315349551%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="show-events-by-date-live-data.html">showEventsByDateLiveData</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-442494230%2FProperties%2F1858809255" anchor-label="showEventsFilteredByCategoryLiveData" id="-442494230%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-events-filtered-by-category-live-data.html"><span>show</span><wbr></wbr><span>Events</span><wbr></wbr><span>Filtered</span><wbr></wbr><span>By</span><wbr></wbr><span>Category</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-442494230%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="show-events-filtered-by-category-live-data.html">showEventsFilteredByCategoryLiveData</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1870088918%2FProperties%2F1858809255" anchor-label="showEventsSearchResultsLiveData" id="-1870088918%2FProperties%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-events-search-results-live-data.html"><span>show</span><wbr></wbr><span>Events</span><wbr></wbr><span>Search</span><wbr></wbr><span>Results</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1870088918%2FProperties%2F1858809255"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="show-events-search-results-live-data.html">showEventsSearchResultsLiveData</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>Accesso</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
