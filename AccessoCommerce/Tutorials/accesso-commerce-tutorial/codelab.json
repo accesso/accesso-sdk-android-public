@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2024-08-30T16:19:12Z",
+  "id": "accesso-commerce-tutorial",
+  "duration": 20,
+  "title": "Module Commerce - Developer User Guide for Accesso SDK for Android",
+  "summary": "Developer User Guide for the Accesso Commerce SDK for Android",
+  "source": "../../../AccessoCommerce/tutorial.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown"
+  ],
+  "tags": [
+    "accesso"
+  ],
+  "feedback": "https://github.com/accesso/accesso-sdk-android",
+  "url": "accesso-commerce-tutorial"
+}

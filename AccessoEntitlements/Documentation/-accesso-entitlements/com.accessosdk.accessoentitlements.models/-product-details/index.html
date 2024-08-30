@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ProductDetails</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>AccessoEntitlements</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":AccessoEntitlements:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="AccessoEntitlements::com.accessosdk.accessoentitlements.models/ProductDetails///PointingToDeclaration//-997642543">
+  <div class="breadcrumbs"><a href="../../../index.html">AccessoEntitlements</a><span class="delimiter">/</span><a href="../index.html">com.accessosdk.accessoentitlements.models</a><span class="delimiter">/</span><span class="current">ProductDetails</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Product</span><wbr></wbr><span><span>Details</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">ProductDetails</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isActive<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>image<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>imageHash<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>timeSpan<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>timeSpanType<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pricing<span class="token operator">: </span><a href="../-pricing/index.html">Pricing</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>admissionCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>minimumSellQuantity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>maximumSellQuantity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isTaxable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>externalTaxCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>itemTypeDescription<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>taxes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-tax-fee/index.html">TaxFee</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-tax-fee/index.html">TaxFee</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>availabilityConfiguration<span class="token operator">: </span><a href="../-validity/index.html">Validity</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ageRestriction<span class="token operator">: </span><a href="../-age-restriction/index.html">AgeRestriction</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>discounts<span class="token operator">: </span><a href="../-discount/index.html">Discount</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>modifierGroups<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-modifier-group/index.html">ModifierGroup</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Data class representing the details of a product.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-230210177%2FConstructors%2F-997642543" anchor-label="ProductDetails" id="-230210177%2FConstructors%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-product-details.html"><span>Product</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-230210177%2FConstructors%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">isActive<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">image<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">imageHash<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">timeSpan<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">timeSpanType<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">pricing<span class="token operator">: </span><a href="../-pricing/index.html">Pricing</a><span class="token punctuation">, </span></span><span class="parameter ">admissionCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">minimumSellQuantity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">maximumSellQuantity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">isTaxable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">externalTaxCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">itemTypeDescription<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">taxes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-tax-fee/index.html">TaxFee</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">fees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-tax-fee/index.html">TaxFee</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">availabilityConfiguration<span class="token operator">: </span><a href="../-validity/index.html">Validity</a><span class="token punctuation">, </span></span><span class="parameter ">ageRestriction<span class="token operator">: </span><a href="../-age-restriction/index.html">AgeRestriction</a><span class="token punctuation">, </span></span><span class="parameter ">discounts<span class="token operator">: </span><a href="../-discount/index.html">Discount</a><span class="token punctuation">, </span></span><span class="parameter ">modifierGroups<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-modifier-group/index.html">ModifierGroup</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1198274991%2FProperties%2F-997642543" anchor-label="admissionCount" id="-1198274991%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="admission-count.html"><span>admission</span><wbr></wbr><span><span>Count</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1198274991%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="admission-count.html">admissionCount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The maximum number of admissions for the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1902113430%2FProperties%2F-997642543" anchor-label="ageRestriction" id="-1902113430%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="age-restriction.html"><span>age</span><wbr></wbr><span><span>Restriction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1902113430%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="age-restriction.html">ageRestriction</a><span class="token operator">: </span><a href="../-age-restriction/index.html">AgeRestriction</a></div><div class="brief "><p class="paragraph">Age restriction details for the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-431697368%2FProperties%2F-997642543" anchor-label="availabilityConfiguration" id="-431697368%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="availability-configuration.html"><span>availability</span><wbr></wbr><span><span>Configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-431697368%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="availability-configuration.html">availabilityConfiguration</a><span class="token operator">: </span><a href="../-validity/index.html">Validity</a></div><div class="brief "><p class="paragraph">Configuration for the product's availability.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="230406951%2FProperties%2F-997642543" anchor-label="description" id="230406951%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="description.html"><span><span>description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="230406951%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="description.html">description</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">A description of the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="740596241%2FProperties%2F-997642543" anchor-label="discounts" id="740596241%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="discounts.html"><span><span>discounts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="740596241%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="discounts.html">discounts</a><span class="token operator">: </span><a href="../-discount/index.html">Discount</a></div><div class="brief "><p class="paragraph">Discounts applicable to the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="505659222%2FProperties%2F-997642543" anchor-label="externalTaxCode" id="505659222%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="external-tax-code.html"><span>external</span><wbr></wbr><span>Tax</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="505659222%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="external-tax-code.html">externalTaxCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">External tax code associated with the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1974638986%2FProperties%2F-997642543" anchor-label="fees" id="1974638986%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fees.html"><span><span>fees</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1974638986%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="fees.html">fees</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-tax-fee/index.html">TaxFee</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of fees associated with the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="368572508%2FProperties%2F-997642543" anchor-label="id" id="368572508%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="368572508%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="id.html">id</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Unique identifier for the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1569551144%2FProperties%2F-997642543" anchor-label="image" id="1569551144%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="image.html"><span><span>image</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1569551144%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="image.html">image</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">URL or path to the image associated with the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1129455674%2FProperties%2F-997642543" anchor-label="imageHash" id="1129455674%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="image-hash.html"><span>image</span><wbr></wbr><span><span>Hash</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1129455674%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="image-hash.html">imageHash</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Hash value for the product image.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="354930375%2FProperties%2F-997642543" anchor-label="isActive" id="354930375%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-active.html"><span>is</span><wbr></wbr><span><span>Active</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="354930375%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-active.html">isActive</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Indicates whether the product is currently active.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1042562696%2FProperties%2F-997642543" anchor-label="isTaxable" id="1042562696%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-taxable.html"><span>is</span><wbr></wbr><span><span>Taxable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1042562696%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-taxable.html">isTaxable</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Indicates whether the product is taxable.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1369836620%2FProperties%2F-997642543" anchor-label="itemTypeDescription" id="-1369836620%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="item-type-description.html"><span>item</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1369836620%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="item-type-description.html">itemTypeDescription</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Description of the product item type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1379767302%2FProperties%2F-997642543" anchor-label="maximumSellQuantity" id="1379767302%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="maximum-sell-quantity.html"><span>maximum</span><wbr></wbr><span>Sell</span><wbr></wbr><span><span>Quantity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1379767302%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="maximum-sell-quantity.html">maximumSellQuantity</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The maximum quantity that can be sold for the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="844429016%2FProperties%2F-997642543" anchor-label="minimumSellQuantity" id="844429016%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="minimum-sell-quantity.html"><span>minimum</span><wbr></wbr><span>Sell</span><wbr></wbr><span><span>Quantity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="844429016%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="minimum-sell-quantity.html">minimumSellQuantity</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The minimum quantity that can be sold for the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="138273004%2FProperties%2F-997642543" anchor-label="modifierGroups" id="138273004%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="modifier-groups.html"><span>modifier</span><wbr></wbr><span><span>Groups</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="138273004%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="modifier-groups.html">modifierGroups</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-modifier-group/index.html">ModifierGroup</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of modifier groups associated with the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1382835604%2FProperties%2F-997642543" anchor-label="name" id="-1382835604%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1382835604%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The name of the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-337348195%2FProperties%2F-997642543" anchor-label="pricing" id="-337348195%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pricing.html"><span><span>pricing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-337348195%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="pricing.html">pricing</a><span class="token operator">: </span><a href="../-pricing/index.html">Pricing</a></div><div class="brief "><p class="paragraph">Pricing details for the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1086181206%2FProperties%2F-997642543" anchor-label="taxes" id="-1086181206%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="taxes.html"><span><span>taxes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1086181206%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="taxes.html">taxes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-tax-fee/index.html">TaxFee</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of taxes applicable to the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1682862528%2FProperties%2F-997642543" anchor-label="timeSpan" id="1682862528%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="time-span.html"><span>time</span><wbr></wbr><span><span>Span</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1682862528%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="time-span.html">timeSpan</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The duration of the product's validity.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1080406490%2FProperties%2F-997642543" anchor-label="timeSpanType" id="-1080406490%2FProperties%2F-997642543" data-filterable-set=":AccessoEntitlements:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AccessoEntitlements:dokkaHtml/release" data-filterable-set=":AccessoEntitlements:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="time-span-type.html"><span>time</span><wbr></wbr><span>Span</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1080406490%2FProperties%2F-997642543"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoEntitlements:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="time-span-type.html">timeSpanType</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The type of time span (e.g., days, months) for the product's validity.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>Accesso</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.accessosdk.accessowallet.models////PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/index.html
+$dokka.location:com.accessosdk.accessowallet.models/AddToWalletResponse///PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-add-to-wallet-response/index.html
+$dokka.location:com.accessosdk.accessowallet.models/AddToWalletResponse/AddToWalletResponse/#kotlin.String/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-add-to-wallet-response/-add-to-wallet-response.html
+$dokka.location:com.accessosdk.accessowallet.models/AddToWalletResponse/jwt/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-add-to-wallet-response/jwt.html
+$dokka.location:com.accessosdk.accessowallet.models/Barcode///PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-barcode/index.html
+$dokka.location:com.accessosdk.accessowallet.models/Barcode/Barcode/#kotlin.String#kotlin.String/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-barcode/-barcode.html
+$dokka.location:com.accessosdk.accessowallet.models/Barcode/barcodeType/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-barcode/barcode-type.html
+$dokka.location:com.accessosdk.accessowallet.models/Barcode/value/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-barcode/value.html
+$dokka.location:com.accessosdk.accessowallet.models/InformationRow///PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-information-row/index.html
+$dokka.location:com.accessosdk.accessowallet.models/InformationRow/InformationRow/#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-information-row/-information-row.html
+$dokka.location:com.accessosdk.accessowallet.models/InformationRow/body/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-information-row/body.html
+$dokka.location:com.accessosdk.accessowallet.models/InformationRow/header/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-information-row/header.html
+$dokka.location:com.accessosdk.accessowallet.models/InformationRow/id/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-information-row/id.html
+$dokka.location:com.accessosdk.accessowallet.models/PassAppearance///PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-appearance/index.html
+$dokka.location:com.accessosdk.accessowallet.models/PassAppearance/PassAppearance/#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-appearance/-pass-appearance.html
+$dokka.location:com.accessosdk.accessowallet.models/PassAppearance/backgroundColor/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-appearance/background-color.html
+$dokka.location:com.accessosdk.accessowallet.models/PassAppearance/heroImage/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-appearance/hero-image.html
+$dokka.location:com.accessosdk.accessowallet.models/PassAppearance/logoImage/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-appearance/logo-image.html
+$dokka.location:com.accessosdk.accessowallet.models/PassRequest///PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-request/index.html
+$dokka.location:com.accessosdk.accessowallet.models/PassRequest/PassRequest/#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.collections.List[com.accessosdk.accessowallet.models.InformationRow]#com.accessosdk.accessowallet.models.Barcode#com.accessosdk.accessowallet.models.PassAppearance/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-request/-pass-request.html
+$dokka.location:com.accessosdk.accessowallet.models/PassRequest/barcode/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-request/barcode.html
+$dokka.location:com.accessosdk.accessowallet.models/PassRequest/classSuffix/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-request/class-suffix.html
+$dokka.location:com.accessosdk.accessowallet.models/PassRequest/id/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-request/id.html
+$dokka.location:com.accessosdk.accessowallet.models/PassRequest/informationRows/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-request/information-rows.html
+$dokka.location:com.accessosdk.accessowallet.models/PassRequest/passAppearance/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-request/pass-appearance.html
+$dokka.location:com.accessosdk.accessowallet.models/PassRequest/passTitle/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-request/pass-title.html
+$dokka.location:com.accessosdk.accessowallet.models/PassRequest/ticketHolder/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet.models/-pass-request/ticket-holder.html
+$dokka.location:com.accessosdk.accessowallet////PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet/index.html
+$dokka.location:com.accessosdk.accessowallet/AccessoWallet///PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet/-accesso-wallet/index.html
+$dokka.location:com.accessosdk.accessowallet/AccessoWallet/AccessoWallet/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet/-accesso-wallet/-accesso-wallet.html
+$dokka.location:com.accessosdk.accessowallet/AccessoWallet/addToGoogleWalletRequestCode/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet/-accesso-wallet/add-to-google-wallet-request-code.html
+$dokka.location:com.accessosdk.accessowallet/AccessoWallet/addToWallet/#com.accessosdk.accessowallet.models.PassRequest/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet/-accesso-wallet/add-to-wallet.html
+$dokka.location:com.accessosdk.accessowallet/AccessoWallet/getJwt/#com.accessosdk.accessowallet.models.PassRequest/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet/-accesso-wallet/get-jwt.html
+$dokka.location:com.accessosdk.accessowallet/AccessoWallet/isWalletAvailable/#/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet/-accesso-wallet/is-wallet-available.html
+$dokka.location:com.accessosdk.accessowallet/AccessoWallet/updatePass/#com.accessosdk.accessowallet.models.PassRequest/PointingToDeclaration/-accesso-wallet/com.accessosdk.accessowallet/-accesso-wallet/update-pass.html
+com.accessosdk.accessowallet
+com.accessosdk.accessowallet.models
+

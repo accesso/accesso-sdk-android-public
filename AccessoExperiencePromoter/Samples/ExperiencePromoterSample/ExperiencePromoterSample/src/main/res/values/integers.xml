@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="message_expiring_tag_text_max_lines">2</integer>
+    <integer name="single_line">1</integer>
+    <integer name="expiration_days_unit_alert_limit">3</integer>
+</resources>

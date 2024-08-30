@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AccessoCore</title>
+    <link href="images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
+<link href="styles/style.css" rel="Stylesheet">
+<link href="styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="styles/main.css" rel="Stylesheet">
+<link href="styles/prism.css" rel="Stylesheet">
+<link href="styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="index.html">
+                    <span>AccessoCore</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":AccessoCore:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="AccessoCore::////PointingToDeclaration//1374969098">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Accesso</span><wbr></wbr><span><span>Core</span></span></h1>
+    <div class="platform-hinted UnderCoverText" data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoCore:dokkaHtml/release"><p class="paragraph">Developer User Guide for the Accesso SDK for Android</p><h2 class=""> Overview</h2><ul><li><p class="paragraph">AccessoCore is the main entrypoint for configuring any of the Accesso Mobile SDKs</p></li><li><p class="paragraph">AccessoCore must be configured before creating an instance of any of the Accesso Mobile SDKs</p></li></ul><h2 class=""> Installing the SDK</h2><ol><li><p class="paragraph">Place the <strong>AccessoCore-release.aar</strong> file within the <i>app/libs</i> directory.</p></li><li><p class="paragraph">Include a dependency to the the SDK in the module-level <i>build.gradle</i> file and add required dependencies</p></li></ol><div class="sample-container"><pre><code class="block lang-groovy" theme="idea">    implementation(files(&quot;libs/AccessoCore-release.aar&quot;))</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ol><li><p class="paragraph">Add required permissions and replace theme.</p></li></ol><div class="sample-container"><pre><code class="block lang-xml" theme="idea">    &lt;manifest&gt;<br>        &lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;<br>        &lt;application&gt;<br>            tools:replace=&quot;android:theme&quot;<br>        &lt;/application&gt;<br>    &lt;/manifest&gt;</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ol><li><p class="paragraph">Sync gradle.</p></li></ol><h2 class=""> Setup SDK Configurations</h2><ol><li><p class="paragraph">Place the <strong>accesso-services.json</strong> file within the <i>app/src/main/assets</i> directory</p></li><li><p class="paragraph">The SDK will read the config files on initialization</p></li></ol><h2 class=""> Initializing the SDK</h2><ul><li><p class="paragraph">Before using the other Accesso Mobile SDKs (such as AccessoExperiencePromoter), initialize the SDK with the required builder functions.</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">        AccessoCore<br>            .setAppUserId(appUserId)<br>            .setApplicationContext(applicationContext)<br>            .setActivity(activity)<br>            .build()</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ul><li><p class="paragraph"><code class="lang-kotlin">appUserId</code> is the UUID of the device</p></li><li><p class="paragraph"><code class="lang-kotlin">applicationContext</code> is the context of the host application</p></li><li><p class="paragraph"><code class="lang-kotlin">activity</code> is the activity that initializes the SDK</p></li><li><p class="paragraph"><code class="lang-kotlin">build()</code> must be called after setting configurations</p></li></ul><p class="paragraph">Other setter functions include:</p><ul><li><p class="paragraph"><code class="lang-kotlin">setOnBeaconRegionDetection(value: (BeaconRegion, Int) -&gt; Unit)</code></p></li><ul><li><p class="paragraph">Sets the BeaconRegionDetection callback</p></li></ul><li><p class="paragraph"><code class="lang-kotlin">setLogLevel(value: LoggerLevel)</code></p></li><ul><li><p class="paragraph">Defines the LoggerLevel</p></li></ul></ul><h2 class=""> Barcode Scanning</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">      coroutineScope.Launch {<br>        val barcodeString: String = AccessoCore.scanBarcode()<br>      }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ul><li><p class="paragraph">The Barcode Scanner uses the Google Code scanner which does not require camera permissions. </p></li><li><p class="paragraph">Simply launch a coroutine and call the scanBarcode function to fetch a string value of the barcode</p></li><li><p class="paragraph">Accept barcode formats: QR Code and ITF</p></li></ul></div></div>
+  </div>
+  <h2 class="">Packages</h2>
+  <div class="table"><a data-name="-1701050496%2FPackages%2F1374969098" anchor-label="com.accesso" id="-1701050496%2FPackages%2F1374969098" data-filterable-set=":AccessoCore:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoCore:dokkaHtml/release" data-filterable-set=":AccessoCore:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-core/com.accesso/index.html">com.accesso</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1701050496%2FPackages%2F1374969098"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-432505704%2FPackages%2F1374969098" anchor-label="com.accesso.composables" id="-432505704%2FPackages%2F1374969098" data-filterable-set=":AccessoCore:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoCore:dokkaHtml/release" data-filterable-set=":AccessoCore:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-core/com.accesso.composables/index.html">com.accesso.composables</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-432505704%2FPackages%2F1374969098"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-979342566%2FPackages%2F1374969098" anchor-label="com.accesso.error" id="-979342566%2FPackages%2F1374969098" data-filterable-set=":AccessoCore:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoCore:dokkaHtml/release" data-filterable-set=":AccessoCore:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-core/com.accesso.error/index.html">com.accesso.error</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-979342566%2FPackages%2F1374969098"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-52470500%2FPackages%2F1374969098" anchor-label="com.accesso.identity.api" id="-52470500%2FPackages%2F1374969098" data-filterable-set=":AccessoCore:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoCore:dokkaHtml/release" data-filterable-set=":AccessoCore:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-core/com.accesso.identity.api/index.html">com.accesso.identity.api</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-52470500%2FPackages%2F1374969098"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1752268027%2FPackages%2F1374969098" anchor-label="com.accesso.model" id="1752268027%2FPackages%2F1374969098" data-filterable-set=":AccessoCore:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoCore:dokkaHtml/release" data-filterable-set=":AccessoCore:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-core/com.accesso.model/index.html">com.accesso.model</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1752268027%2FPackages%2F1374969098"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1206377377%2FPackages%2F1374969098" anchor-label="com.accesso.networking.model" id="1206377377%2FPackages%2F1374969098" data-filterable-set=":AccessoCore:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoCore:dokkaHtml/release" data-filterable-set=":AccessoCore:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-core/com.accesso.networking.model/index.html">com.accesso.networking.model</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1206377377%2FPackages%2F1374969098"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-804725042%2FPackages%2F1374969098" anchor-label="com.accesso.networking.util" id="-804725042%2FPackages%2F1374969098" data-filterable-set=":AccessoCore:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoCore:dokkaHtml/release" data-filterable-set=":AccessoCore:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-core/com.accesso.networking.util/index.html">com.accesso.networking.util</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-804725042%2FPackages%2F1374969098"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="347533211%2FPackages%2F1374969098" anchor-label="com.accesso.theme" id="347533211%2FPackages%2F1374969098" data-filterable-set=":AccessoCore:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoCore:dokkaHtml/release" data-filterable-set=":AccessoCore:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-core/com.accesso.theme/index.html">com.accesso.theme</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="347533211%2FPackages%2F1374969098"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-284617677%2FPackages%2F1374969098" anchor-label="com.accesso.theme.composables" id="-284617677%2FPackages%2F1374969098" data-filterable-set=":AccessoCore:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoCore:dokkaHtml/release" data-filterable-set=":AccessoCore:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-core/com.accesso.theme.composables/index.html">com.accesso.theme.composables</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-284617677%2FPackages%2F1374969098"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="918983201%2FPackages%2F1374969098" anchor-label="com.accesso.theme.models" id="918983201%2FPackages%2F1374969098" data-filterable-set=":AccessoCore:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoCore:dokkaHtml/release" data-filterable-set=":AccessoCore:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-core/com.accesso.theme.models/index.html">com.accesso.theme.models</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="918983201%2FPackages%2F1374969098"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1568188980%2FPackages%2F1374969098" anchor-label="com.accesso.util" id="1568188980%2FPackages%2F1374969098" data-filterable-set=":AccessoCore:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoCore:dokkaHtml/release" data-filterable-set=":AccessoCore:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-core/com.accesso.util/index.html">com.accesso.util</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1568188980%2FPackages%2F1374969098"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-320357055%2FPackages%2F1374969098" anchor-label="com.accesso.viewmodels" id="-320357055%2FPackages%2F1374969098" data-filterable-set=":AccessoCore:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoCore:dokkaHtml/release" data-filterable-set=":AccessoCore:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-core/com.accesso.viewmodels/index.html">com.accesso.viewmodels</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-320357055%2FPackages%2F1374969098"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>Accesso</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

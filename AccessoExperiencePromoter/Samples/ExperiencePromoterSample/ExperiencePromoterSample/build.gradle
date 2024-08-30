@@ -1,0 +1,100 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+}
+
+apply plugin: 'kotlin-parcelize'
+
+def GOOGLE_SERVICE_JSON = file("google-services.json")
+if (GOOGLE_SERVICE_JSON.exists()) {
+    apply plugin: 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.accesso.sdk_android_experience_promoter_sample'
+    compileSdk Versions.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.accesso.sdk_android_experience_promoter_sample"
+        minSdk Versions.minSdkVersion
+        targetSdk Versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        compose true
+        viewBinding = true
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        debug {
+            testCoverageEnabled true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Versions.kotlinCompilerExtensionVersion
+    }
+    lintOptions {
+        disable 'NullSafeMutableLiveData'
+    }
+}
+
+dependencies {
+
+    implementation "androidx.core:core-ktx:${Versions.androidxCoreKtx}"
+    implementation "com.google.android.material:material:${Versions.googleAndroidMaterial}"
+    implementation("androidx.security:security-crypto:${Versions.androidxSecurityCrypto}")
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:31.1.0')
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation("com.google.code.gson:gson:${Versions.gsonVersion}")
+
+    // Networking
+    api("com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}")
+    api("com.squareup.retrofit2:converter-gson:${Versions.retrofitVersion}")
+    api("com.squareup.retrofit2:adapter-rxjava:${Versions.retrofitVersion}")
+    implementation("com.squareup.moshi:moshi:${Versions.moshiVersion}")
+    implementation("com.squareup.moshi:moshi-adapters:${Versions.moshiVersion}")
+    implementation("com.squareup.retrofit2:converter-moshi:${Versions.moshiConverter}")
+    api("com.github.bumptech.glide:glide:${Versions.glide}")
+    annotationProcessor("com.github.bumptech.glide:compiler:${Versions.glideCompiler}")
+    implementation "com.github.bumptech.glide:compose:${Versions.glideCompose}"
+
+    // Jetpack Compose libs
+    implementation "androidx.activity:activity-compose:${Versions.composeActivity}"
+    implementation "androidx.compose.ui:ui:${Versions.composeUI}"
+    implementation "androidx.compose.ui:ui-tooling-preview:${Versions.composeUI}"
+    implementation "androidx.compose.material:material:${Versions.composeMaterial}"
+    implementation "androidx.compose.material3:material3:${Versions.composeMaterial3}"
+    implementation "androidx.compose.runtime:runtime-livedata:${Versions.composeRuntimeLivedata}"
+    implementation "androidx.navigation:navigation-compose:${Versions.composeNavigation}"
+    implementation "io.coil-kt:coil-compose:${Versions.composeCoil}"
+
+    // accesso libraries
+    implementation(project(":AccessoExperiencePromoter"))
+    implementation(project(":AccessoCore"))
+
+    // Beacons
+    implementation("org.altbeacon:android-beacon-library:2.19.4")
+
+    implementation "androidx.test:core:${Versions.testCore}"
+    implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-native:1.0.15'
+}

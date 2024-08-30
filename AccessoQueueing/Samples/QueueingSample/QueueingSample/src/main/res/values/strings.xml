@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QueueingSample</string>
+
+    <string name="view_attractions">View Attractions</string>
+</resources>

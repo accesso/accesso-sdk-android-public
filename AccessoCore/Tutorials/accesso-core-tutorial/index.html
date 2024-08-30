@@ -1,0 +1,128 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Module Core - Developer User Guide for Accesso SDK for Android</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="accesso-core-tutorial"
+                  title="Module Core - Developer User Guide for Accesso SDK for Android"
+                  environment="web"
+                  feedback-link="https://github.com/accesso/accesso-sdk-android">
+    
+      <google-codelab-step label="Installing the SDK" duration="10">
+        <h2 is-upgraded>Installation</h2>
+<ol type="1">
+<li>Place the <strong>AccessoCore-release.aar</strong> file within the <em>app/libs</em> directory.</li>
+<li>Include a dependency to the the SDK in the module-level <em>build.gradle</em> file and add required dependencies</li>
+</ol>
+<pre><code language="language-groovy" class="language-groovy">    implementation(files(&#34;libs/AccessoCore-release.aar&#34;))
+    implementation(&#34;com.squareup.retrofit2:retrofit:2.9.0&#34;)
+    implementation(&#34;com.squareup.retrofit2:converter-gson:2.9.0&#34;)
+    implementation(&#34;org.altbeacon:android-beacon-library:2.19.4&#34;)
+    implementation &#39;com.google.android.gms:play-services-code-scanner:16.1.0&#39;
+</code></pre>
+<ol type="1" start="3">
+<li>Add required permissions and replace theme.</li>
+</ol>
+<pre><code language="language-xml" class="language-xml">    &lt;manifest&gt;
+        &lt;uses-permission android:name=&#34;android.permission.ACCESS_COARSE_LOCATION&#34; /&gt;
+        &lt;uses-permission android:name=&#34;android.permission.ACCESS_FINE_LOCATION&#34; /&gt;
+        &lt;uses-permission android:name=&#34;android.permission.INTERNET&#34; /&gt;
+        &lt;application&gt;
+            tools:replace=&#34;android:theme&#34;
+        &lt;/application&gt;
+    &lt;/manifest&gt;
+</code></pre>
+<ol type="1" start="4">
+<li>Sync gradle.</li>
+<li>Add <code>accesso-services.json</code> to the <code>assets</code> directory with all fields filled out</li>
+</ol>
+<pre><code language="language-json" class="language-json">{
+  &#34;VENUE_ID&#34;: &#34;&#34;,
+  &#34;APP_ID&#34;: &#34;&#34;,
+  &#34;FIREBASE_CONFIG&#34;: &#34;google-service.json&#34;,
+  &#34;BASE_URL&#34;: &#34;https://host.te2.biz&#34;,
+  &#34;PREFERRED_LANGUAGE&#34;: &#34;en&#34;,
+  &#34;IDENTITY_USERNAME&#34;: &#34;&#34;,
+  &#34;IDENTITY_PASSWORD&#34;: &#34;&#34;,
+  &#34;USERNAME&#34;: &#34;&#34;,
+  &#34;PASSWORD&#34;: &#34;&#34;
+}
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuring the SDK" duration="10">
+        <h2 is-upgraded>Required Fields</h2>
+<ol type="1">
+<li>Call the require setter functions. This must be done before using any Accesso SDK features.</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">        AccessoCore
+            .setAppUserId(appUserId)
+            .setApplicationContext(applicationContext)
+            .setActivity(activity)
+            .build()
+</code></pre>
+<h2 is-upgraded>Optional Fields</h2>
+<ol type="1">
+<li>Call required and optional setter functions.</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">        AccessoCore
+            .setAppUserId(appUserId)
+            .setApplicationContext(applicationContext)
+            .setActivity(activity)
+            .setOnBeaconRegionDetection(onBeaconDetectionCallback)
+            .setLogLevel(LoggerLevel.ERROR)
+            .build()
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Using the barcode scanner" duration="0">
+        <ol type="1">
+<li>Call the scanBarcode function from within a kotlin coroutine</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">      coroutineScope.Launch {
+        val barcodeString: String = AccessoCore.scanBarcode()
+      }
+</code></pre>
+<ul>
+<li>The Barcode Scanner uses the Google Code scanner which does not require camera permissions.</li>
+<li>Simply launch a coroutine and call the scanBarcode function to fetch a string value of the barcode</li>
+<li>Accept barcode formats: QR Code and ITF</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

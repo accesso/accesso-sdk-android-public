@@ -1,0 +1,43 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.accessosdk.accessoqueueing.model////PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/index.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ActionInputRequirements///PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-action-input-requirements/index.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ActionInputRequirements/ActionInputRequirements/#kotlin.String#kotlin.String#kotlin.Boolean#kotlin.String#kotlin.String#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-action-input-requirements/-action-input-requirements.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ActionInputRequirements/dataType/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-action-input-requirements/data-type.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ActionInputRequirements/defaultValue/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-action-input-requirements/default-value.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ActionInputRequirements/description/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-action-input-requirements/description.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ActionInputRequirements/id/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-action-input-requirements/id.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ActionInputRequirements/isRequired/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-action-input-requirements/is-required.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ActionInputRequirements/maximum/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-action-input-requirements/maximum.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ActionInputRequirements/minimum/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-action-input-requirements/minimum.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ActionInputRequirements/title/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-action-input-requirements/title.html
+$dokka.location:com.accessosdk.accessoqueueing.model/Attraction///PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-attraction/index.html
+$dokka.location:com.accessosdk.accessoqueueing.model/Attraction/Attraction/#kotlin.String#kotlin.String#kotlin.String#kotlin.Float#kotlin.String#kotlin.String#kotlin.collections.List[kotlin.String]#kotlin.collections.List[com.accessosdk.accessoqueueing.model.ReserveAction]/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-attraction/-attraction.html
+$dokka.location:com.accessosdk.accessoqueueing.model/Attraction/description/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-attraction/description.html
+$dokka.location:com.accessosdk.accessoqueueing.model/Attraction/id/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-attraction/id.html
+$dokka.location:com.accessosdk.accessoqueueing.model/Attraction/name/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-attraction/name.html
+$dokka.location:com.accessosdk.accessoqueueing.model/Attraction/reserveActions/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-attraction/reserve-actions.html
+$dokka.location:com.accessosdk.accessoqueueing.model/Attraction/restrictions/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-attraction/restrictions.html
+$dokka.location:com.accessosdk.accessoqueueing.model/Attraction/state/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-attraction/state.html
+$dokka.location:com.accessosdk.accessoqueueing.model/Attraction/thumbnailImage/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-attraction/thumbnail-image.html
+$dokka.location:com.accessosdk.accessoqueueing.model/Attraction/waitTimeInMinutes/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-attraction/wait-time-in-minutes.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ReservationFailed///PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-reservation-failed/index.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ReservationFailed/ReservationFailed/#kotlin.String/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-reservation-failed/-reservation-failed.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ReservationFailed/errorMessage/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-reservation-failed/error-message.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ReservationResponse///PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-reservation-response/index.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ReservationSuccessful///PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-reservation-successful/index.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ReserveAction///PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-reserve-action/index.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ReserveAction/ReserveAction/#kotlin.String#kotlin.String#kotlin.collections.Map[kotlin.String,kotlin.Any]#kotlin.collections.List[com.accessosdk.accessoqueueing.model.ActionInputRequirements]/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-reserve-action/-reserve-action.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ReserveAction/data/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-reserve-action/data.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ReserveAction/description/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-reserve-action/description.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ReserveAction/id/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-reserve-action/id.html
+$dokka.location:com.accessosdk.accessoqueueing.model/ReserveAction/inputRequirements/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing.model/-reserve-action/input-requirements.html
+$dokka.location:com.accessosdk.accessoqueueing////PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing/index.html
+$dokka.location:com.accessosdk.accessoqueueing/AccessoQueueing///PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing/-accesso-queueing/index.html
+$dokka.location:com.accessosdk.accessoqueueing/AccessoQueueing/AccessoQueueing/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing/-accesso-queueing/-accesso-queueing.html
+$dokka.location:com.accessosdk.accessoqueueing/AccessoQueueing/getAttractionById/#kotlin.String/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing/-accesso-queueing/get-attraction-by-id.html
+$dokka.location:com.accessosdk.accessoqueueing/AccessoQueueing/getAttractions/#/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing/-accesso-queueing/get-attractions.html
+$dokka.location:com.accessosdk.accessoqueueing/AccessoQueueing/reserve/#kotlin.String#kotlin.collections.Map[kotlin.String,kotlin.Any]?/PointingToDeclaration/-accesso-queueing/com.accessosdk.accessoqueueing/-accesso-queueing/reserve.html
+com.accessosdk.accessoqueueing
+com.accessosdk.accessoqueueing.model
+

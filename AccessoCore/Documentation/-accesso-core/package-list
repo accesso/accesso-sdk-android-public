@@ -1,0 +1,155 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.accesso.composables////PointingToDeclaration/-accesso-core/com.accesso.composables/index.html
+$dokka.location:com.accesso.composables//AlertDialog/#com.accesso.viewmodels.DialogViewModel/PointingToDeclaration/-accesso-core/com.accesso.composables/-alert-dialog.html
+$dokka.location:com.accesso.composables//Image/#kotlin.String#androidx.compose.ui.Modifier#androidx.compose.ui.unit.Dp/PointingToDeclaration/-accesso-core/com.accesso.composables/-image.html
+$dokka.location:com.accesso.composables//PlaceholderImage/#androidx.compose.ui.Modifier#androidx.compose.ui.unit.Dp/PointingToDeclaration/-accesso-core/com.accesso.composables/-placeholder-image.html
+$dokka.location:com.accesso.error////PointingToDeclaration/-accesso-core/com.accesso.error/index.html
+$dokka.location:com.accesso.error/AccessoSDKInitError///PointingToDeclaration/-accesso-core/com.accesso.error/-accesso-s-d-k-init-error/index.html
+$dokka.location:com.accesso.error/AccessoSDKInitError/AccessoSDKInitError/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.error/-accesso-s-d-k-init-error/-accesso-s-d-k-init-error.html
+$dokka.location:com.accesso.error/AccessoSDKNetworkException///PointingToDeclaration/-accesso-core/com.accesso.error/-accesso-s-d-k-network-exception/index.html
+$dokka.location:com.accesso.error/AccessoSDKNetworkException/AccessoSDKNetworkException/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.error/-accesso-s-d-k-network-exception/-accesso-s-d-k-network-exception.html
+$dokka.location:com.accesso.error/AccessoServicesNotFoundException///PointingToDeclaration/-accesso-core/com.accesso.error/-accesso-services-not-found-exception/index.html
+$dokka.location:com.accesso.error/AccessoServicesNotFoundException/AccessoServicesNotFoundException/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.error/-accesso-services-not-found-exception/-accesso-services-not-found-exception.html
+$dokka.location:com.accesso.identity.api////PointingToDeclaration/-accesso-core/com.accesso.identity.api/index.html
+$dokka.location:com.accesso.identity.api/IdentityRetrofitClientFactory///PointingToDeclaration/-accesso-core/com.accesso.identity.api/-identity-retrofit-client-factory/index.html
+$dokka.location:com.accesso.identity.api/IdentityRetrofitClientFactory/create/#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.identity.api/-identity-retrofit-client-factory/create.html
+$dokka.location:com.accesso.model////PointingToDeclaration/-accesso-core/com.accesso.model/index.html
+$dokka.location:com.accesso.model/DateRange///PointingToDeclaration/-accesso-core/com.accesso.model/-date-range/index.html
+$dokka.location:com.accesso.model/DateRange/DateRange/#java.util.Date#java.util.Date/PointingToDeclaration/-accesso-core/com.accesso.model/-date-range/-date-range.html
+$dokka.location:com.accesso.model/DateRange/end/#/PointingToDeclaration/-accesso-core/com.accesso.model/-date-range/end.html
+$dokka.location:com.accesso.model/DateRange/intersects/#com.accesso.model.DateRange/PointingToDeclaration/-accesso-core/com.accesso.model/-date-range/intersects.html
+$dokka.location:com.accesso.model/DateRange/start/#/PointingToDeclaration/-accesso-core/com.accesso.model/-date-range/start.html
+$dokka.location:com.accesso.networking.model////PointingToDeclaration/-accesso-core/com.accesso.networking.model/index.html
+$dokka.location:com.accesso.networking.model/BeaconRegion///PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/index.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/BeaconRegion/#kotlin.String?#kotlin.String?#kotlin.Int?#kotlin.Int?#kotlin.String?#kotlin.Int?#kotlin.Int?#kotlin.Boolean?/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/-beacon-region.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/id/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/id.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/major/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/major.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/mfrCode/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/mfr-code.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/minor/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/minor.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/outOfVenue/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/out-of-venue.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/proximityUUID/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/proximity-u-u-i-d.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/signalPower/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/signal-power.html
+$dokka.location:com.accesso.networking.model/BeaconRegion/ttl/#/PointingToDeclaration/-accesso-core/com.accesso.networking.model/-beacon-region/ttl.html
+$dokka.location:com.accesso.networking.util////PointingToDeclaration/-accesso-core/com.accesso.networking.util/index.html
+$dokka.location:com.accesso.networking.util//getPayloadJson/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.networking.util/get-payload-json.html
+$dokka.location:com.accesso.networking.util//isAnonymousToken/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.networking.util/is-anonymous-token.html
+$dokka.location:com.accesso.networking.util/BeaconUtils///PointingToDeclaration/-accesso-core/com.accesso.networking.util/-beacon-utils/index.html
+$dokka.location:com.accesso.networking.util/BeaconUtils/filterResponseByValidUUID/#okhttp3.Response/PointingToDeclaration/-accesso-core/com.accesso.networking.util/-beacon-utils/filter-response-by-valid-u-u-i-d.html
+$dokka.location:com.accesso.theme.composables////PointingToDeclaration/-accesso-core/com.accesso.theme.composables/index.html
+$dokka.location:com.accesso.theme.composables//AccessoTheme/#com.accesso.theme.models.ThemeConfig#kotlin.Boolean#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-accesso-core/com.accesso.theme.composables/-accesso-theme.html
+$dokka.location:com.accesso.theme.composables//AccessoThemePreview/#/PointingToDeclaration/-accesso-core/com.accesso.theme.composables/-accesso-theme-preview.html
+$dokka.location:com.accesso.theme.composables//LocalAccessoCornerRadius/#/PointingToDeclaration/-accesso-core/com.accesso.theme.composables/-local-accesso-corner-radius.html
+$dokka.location:com.accesso.theme.composables//LocalAccessoExtendedColors/#/PointingToDeclaration/-accesso-core/com.accesso.theme.composables/-local-accesso-extended-colors.html
+$dokka.location:com.accesso.theme.composables//fontFileExists/#android.content.res.AssetManager#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.theme.composables/font-file-exists.html
+$dokka.location:com.accesso.theme.composables//getDynamicFontFamily/#kotlin.String?/PointingToDeclaration/-accesso-core/com.accesso.theme.composables/get-dynamic-font-family.html
+$dokka.location:com.accesso.theme.models////PointingToDeclaration/-accesso-core/com.accesso.theme.models/index.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors///PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/index.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/AccessoExtendedColors/#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/-accesso-extended-colors.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/bigTitleColor/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/big-title-color.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/primaryBtnFill/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/primary-btn-fill.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/primaryBtnText/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/primary-btn-text.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/readOnlyChipFill/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/read-only-chip-fill.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/readOnlyChipText/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/read-only-chip-text.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/secondaryBtnBorder/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/secondary-btn-border.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/secondaryBtnFill/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/secondary-btn-fill.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/secondaryBtnText/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/secondary-btn-text.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/selectedChipBorder/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/selected-chip-border.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/selectedChipFill/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/selected-chip-fill.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/selectedChipText/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/selected-chip-text.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/subTextColor/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/sub-text-color.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/textBtn/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/text-btn.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/titleColor/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/title-color.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/topTabHighlight/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/top-tab-highlight.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/unSelectedChipBorder/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/un-selected-chip-border.html
+$dokka.location:com.accesso.theme.models/AccessoExtendedColors/unSelectedChipText/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-accesso-extended-colors/un-selected-chip-text.html
+$dokka.location:com.accesso.theme.models/ColorConfig///PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/index.html
+$dokka.location:com.accesso.theme.models/ColorConfig/ColorConfig/#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/-color-config.html
+$dokka.location:com.accesso.theme.models/ColorConfig/backgroundDark/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/background-dark.html
+$dokka.location:com.accesso.theme.models/ColorConfig/backgroundLight/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/background-light.html
+$dokka.location:com.accesso.theme.models/ColorConfig/buttonPrimary/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/button-primary.html
+$dokka.location:com.accesso.theme.models/ColorConfig/buttonSecondary/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/button-secondary.html
+$dokka.location:com.accesso.theme.models/ColorConfig/disabledDark/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/disabled-dark.html
+$dokka.location:com.accesso.theme.models/ColorConfig/disabledLight/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/disabled-light.html
+$dokka.location:com.accesso.theme.models/ColorConfig/error/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/error.html
+$dokka.location:com.accesso.theme.models/ColorConfig/grayScale4/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/gray-scale4.html
+$dokka.location:com.accesso.theme.models/ColorConfig/primary/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/primary.html
+$dokka.location:com.accesso.theme.models/ColorConfig/primaryDark/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/primary-dark.html
+$dokka.location:com.accesso.theme.models/ColorConfig/primaryLight/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/primary-light.html
+$dokka.location:com.accesso.theme.models/ColorConfig/secondary/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/secondary.html
+$dokka.location:com.accesso.theme.models/ColorConfig/secondaryDark/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/secondary-dark.html
+$dokka.location:com.accesso.theme.models/ColorConfig/secondaryLight/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/secondary-light.html
+$dokka.location:com.accesso.theme.models/ColorConfig/success/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/success.html
+$dokka.location:com.accesso.theme.models/ColorConfig/tertiary/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/tertiary.html
+$dokka.location:com.accesso.theme.models/ColorConfig/tertiaryDark/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/tertiary-dark.html
+$dokka.location:com.accesso.theme.models/ColorConfig/tertiaryLight/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/tertiary-light.html
+$dokka.location:com.accesso.theme.models/ColorConfig/textDark/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/text-dark.html
+$dokka.location:com.accesso.theme.models/ColorConfig/textWhite/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/text-white.html
+$dokka.location:com.accesso.theme.models/ColorConfig/warning/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-color-config/warning.html
+$dokka.location:com.accesso.theme.models/CornerRadiusConfig///PointingToDeclaration/-accesso-core/com.accesso.theme.models/-corner-radius-config/index.html
+$dokka.location:com.accesso.theme.models/CornerRadiusConfig/CornerRadiusConfig/#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-corner-radius-config/-corner-radius-config.html
+$dokka.location:com.accesso.theme.models/CornerRadiusConfig/buttonRadius/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-corner-radius-config/button-radius.html
+$dokka.location:com.accesso.theme.models/CornerRadiusConfig/contentCardRadius/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-corner-radius-config/content-card-radius.html
+$dokka.location:com.accesso.theme.models/CornerRadiusConfig/tileRadius/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-corner-radius-config/tile-radius.html
+$dokka.location:com.accesso.theme.models/FontConfig///PointingToDeclaration/-accesso-core/com.accesso.theme.models/-font-config/index.html
+$dokka.location:com.accesso.theme.models/FontConfig/FontConfig/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-font-config/-font-config.html
+$dokka.location:com.accesso.theme.models/FontConfig/customFont/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-font-config/custom-font.html
+$dokka.location:com.accesso.theme.models/ThemeConfig///PointingToDeclaration/-accesso-core/com.accesso.theme.models/-theme-config/index.html
+$dokka.location:com.accesso.theme.models/ThemeConfig/ThemeConfig/#com.accesso.theme.models.ColorConfig#com.accesso.theme.models.CornerRadiusConfig#com.accesso.theme.models.FontConfig/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-theme-config/-theme-config.html
+$dokka.location:com.accesso.theme.models/ThemeConfig/colorConfig/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-theme-config/color-config.html
+$dokka.location:com.accesso.theme.models/ThemeConfig/cornerRadiusConfig/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-theme-config/corner-radius-config.html
+$dokka.location:com.accesso.theme.models/ThemeConfig/fontConfig/#/PointingToDeclaration/-accesso-core/com.accesso.theme.models/-theme-config/font-config.html
+$dokka.location:com.accesso.theme////PointingToDeclaration/-accesso-core/com.accesso.theme/index.html
+$dokka.location:com.accesso.theme/ThemeService///PointingToDeclaration/-accesso-core/com.accesso.theme/-theme-service/index.html
+$dokka.location:com.accesso.theme/ThemeService/configureThemeCustomization/#/PointingToDeclaration/-accesso-core/com.accesso.theme/-theme-service/configure-theme-customization.html
+$dokka.location:com.accesso.theme/ThemeService/getThemeConfig/#/PointingToDeclaration/-accesso-core/com.accesso.theme/-theme-service/get-theme-config.html
+$dokka.location:com.accesso.util////PointingToDeclaration/-accesso-core/com.accesso.util/index.html
+$dokka.location:com.accesso.util//accessoCoroutineExceptionHandlerLogging/#/PointingToDeclaration/-accesso-core/com.accesso.util/accesso-coroutine-exception-handler-logging.html
+$dokka.location:com.accesso.util//getHexWithAlpha/#kotlin.String#kotlin.Float/PointingToDeclaration/-accesso-core/com.accesso.util/get-hex-with-alpha.html
+$dokka.location:com.accesso.util/LoggerLevel.DEBUG///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-accesso-core/com.accesso.util/-logger-level/-d-e-b-u-g/index.html
+$dokka.location:com.accesso.util/LoggerLevel.ERROR///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-accesso-core/com.accesso.util/-logger-level/-e-r-r-o-r/index.html
+$dokka.location:com.accesso.util/LoggerLevel.INFO///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-accesso-core/com.accesso.util/-logger-level/-i-n-f-o/index.html
+$dokka.location:com.accesso.util/LoggerLevel.WARN///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-accesso-core/com.accesso.util/-logger-level/-w-a-r-n/index.html
+$dokka.location:com.accesso.util/LoggerLevel///PointingToDeclaration/-accesso-core/com.accesso.util/-logger-level/index.html
+$dokka.location:com.accesso.util/LoggerLevel/value/#/PointingToDeclaration/-accesso-core/com.accesso.util/-logger-level/value.html
+$dokka.location:com.accesso.util/LoggerLevel/valueOf/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso.util/-logger-level/value-of.html
+$dokka.location:com.accesso.util/LoggerLevel/values/#/PointingToDeclaration/-accesso-core/com.accesso.util/-logger-level/values.html
+$dokka.location:com.accesso.viewmodels////PointingToDeclaration/-accesso-core/com.accesso.viewmodels/index.html
+$dokka.location:com.accesso.viewmodels/DialogMessage///PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-message/index.html
+$dokka.location:com.accesso.viewmodels/DialogMessage/DialogMessage/#kotlin.Boolean#kotlin.String#kotlin.String#kotlin.String#kotlin.String?#kotlin.Function0[kotlin.Unit]#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-message/-dialog-message.html
+$dokka.location:com.accesso.viewmodels/DialogMessage/confirmText/#/PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-message/confirm-text.html
+$dokka.location:com.accesso.viewmodels/DialogMessage/dismissText/#/PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-message/dismiss-text.html
+$dokka.location:com.accesso.viewmodels/DialogMessage/message/#/PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-message/message.html
+$dokka.location:com.accesso.viewmodels/DialogMessage/onConfirmButtonPressed/#/PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-message/on-confirm-button-pressed.html
+$dokka.location:com.accesso.viewmodels/DialogMessage/onDismissedButtonPressed/#/PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-message/on-dismissed-button-pressed.html
+$dokka.location:com.accesso.viewmodels/DialogMessage/shouldShowDialog/#/PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-message/should-show-dialog.html
+$dokka.location:com.accesso.viewmodels/DialogMessage/title/#/PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-message/title.html
+$dokka.location:com.accesso.viewmodels/DialogViewModel///PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-view-model/index.html
+$dokka.location:com.accesso.viewmodels/DialogViewModel/DialogViewModel/#/PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-view-model/-dialog-view-model.html
+$dokka.location:com.accesso.viewmodels/DialogViewModel/closeDialog/#/PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-view-model/close-dialog.html
+$dokka.location:com.accesso.viewmodels/DialogViewModel/dialogMessageState/#/PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-view-model/dialog-message-state.html
+$dokka.location:com.accesso.viewmodels/DialogViewModel/setDialog/#kotlin.String#kotlin.String#kotlin.String#kotlin.String?#kotlin.Function0[kotlin.Unit]#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-accesso-core/com.accesso.viewmodels/-dialog-view-model/set-dialog.html
+$dokka.location:com.accesso////PointingToDeclaration/-accesso-core/com.accesso/index.html
+$dokka.location:com.accesso/AccessoCore///PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/index.html
+$dokka.location:com.accesso/AccessoCore/build/#/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/build.html
+$dokka.location:com.accesso/AccessoCore/configureThemeCustomization/#/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/configure-theme-customization.html
+$dokka.location:com.accesso/AccessoCore/scanBarcode/#/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/scan-barcode.html
+$dokka.location:com.accesso/AccessoCore/setActivity/#android.app.Activity?/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/set-activity.html
+$dokka.location:com.accesso/AccessoCore/setAppUserId/#kotlin.String/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/set-app-user-id.html
+$dokka.location:com.accesso/AccessoCore/setApplicationContext/#android.content.Context/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/set-application-context.html
+$dokka.location:com.accesso/AccessoCore/setBeaconManagerWrapper/#com.accesso.BeaconManagerWrapper/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/set-beacon-manager-wrapper.html
+$dokka.location:com.accesso/AccessoCore/setLogLevel/#com.accesso.util.LoggerLevel/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/set-log-level.html
+$dokka.location:com.accesso/AccessoCore/setOnBeaconRegionDetection/#kotlin.Function2[com.accesso.networking.model.BeaconRegion,kotlin.Int,kotlin.Unit]/PointingToDeclaration/-accesso-core/com.accesso/-accesso-core/set-on-beacon-region-detection.html
+com.accesso
+com.accesso.composables
+com.accesso.error
+com.accesso.identity.api
+com.accesso.model
+com.accesso.networking.model
+com.accesso.networking.util
+com.accesso.theme
+com.accesso.theme.composables
+com.accesso.theme.models
+com.accesso.util
+com.accesso.viewmodels
+

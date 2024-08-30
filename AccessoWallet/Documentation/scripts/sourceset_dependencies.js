@@ -1,0 +1,1 @@
+sourceset_dependencies='{":AccessoWallet:dokkaHtml/androidTestRelease":[],":AccessoWallet:dokkaHtml/debug":[],":AccessoWallet:dokkaHtml/main":[],":AccessoWallet:dokkaHtml/release":[],":AccessoWallet:dokkaHtml/testFixtures":[],":AccessoWallet:dokkaHtml/testFixturesDebug":[],":AccessoWallet:dokkaHtml/testFixturesRelease":[]}'

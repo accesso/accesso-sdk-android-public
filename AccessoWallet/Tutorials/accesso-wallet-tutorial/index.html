@@ -1,0 +1,193 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Module Wallet - Developer User Guide for Accesso SDK for Android</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="accesso-wallet-tutorial"
+                  title="Module Wallet - Developer User Guide for Accesso SDK for Android"
+                  environment="web"
+                  feedback-link="https://github.com/accesso/accesso-sdk-android">
+    
+      <google-codelab-step label="Installing the SDK" duration="10">
+        <h2 is-upgraded>Installation</h2>
+<ol type="1">
+<li>Place the <strong>AccessoWallet-release.aar</strong> file within the <em>app/libs</em> directory.</li>
+<li>Include a dependency to the the SDK in the module-level <em>build.gradle</em> file and add required dependencies</li>
+</ol>
+<pre><code language="language-kotlin" class="language-kotlin">    implementation(files(&#34;libs/AccessoWallet-release.aar&#34;))
+    implementation(&#34;com.google.android.gms:play-services-pay:16.4.0&#34;) //needed when overriding OnActivityResult()
+</code></pre>
+<ol type="1" start="3">
+<li>Add required permissions and replace theme.</li>
+</ol>
+<pre><code language="language-xml" class="language-xml">    &lt;manifest&gt;
+        &lt;uses-permission android:name=&#34;android.permission.INTERNET&#34; /&gt;
+        &lt;application&gt;
+            tools:replace=&#34;android:theme&#34;
+        &lt;/application&gt;
+    &lt;/manifest&gt;
+</code></pre>
+<ol type="1" start="4">
+<li>Sync gradle.</li>
+<li>Add <code>accesso-services.json</code> to the <code>assets</code> directory with all fields filled out</li>
+</ol>
+<pre><code language="language-json" class="language-json">{
+   &#34;VENUE_ID&#34;: &#34;&#34;,
+   &#34;APP_ID&#34;: &#34;&#34;,
+   &#34;FIREBASE_CONFIG&#34;: &#34;google-service.json&#34;,
+   &#34;BASE_URL&#34;: &#34;https://host.te2.biz&#34;,
+   &#34;PREFERRED_LANGUAGE&#34;: &#34;en&#34;,
+   &#34;IDENTITY_USERNAME&#34;: &#34;&#34;,
+   &#34;IDENTITY_PASSWORD&#34;: &#34;&#34;,
+   &#34;USERNAME&#34;: &#34;&#34;,
+   &#34;PASSWORD&#34;: &#34;&#34;, 
+   &#34;ENTITLEMENTS_BASE_URL&#34;: &#34;https://host.te2.biz&#34;
+}
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Setup SDK Configurations" duration="0">
+        <ol type="1">
+<li>Place the <strong>accesso-services.json</strong> file within the <em>app/src/main/assets</em> directory</li>
+<li>The SDK will read the config files on initialization</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Initializing the SDK" duration="0">
+        <ul>
+<li>Before saving passes to Google Wallet, initialize the SDK core with the required builder functions and create an instance of AccessoWallet.</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">    AccessoCore
+        .setActivity(activity)
+        .setApplicationContext(context)
+        .build()
+       
+        val accessoWallet = AccessoWallet()
+</code></pre>
+<ul>
+<li><code>applicationContext</code> is the context of the host application</li>
+<li><code>activity</code> is the activity that initializes the SDK</li>
+<li><code>build()</code> must be called after setting configurations</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Determine if the user&#39;s device/account supports Google Wallet" duration="0">
+        <ul>
+<li>After the <em>Accesso Wallet SDK</em> has been initialized, call the <code>isWalletAvailable()</code> function</li>
+<li>Note <code>AccessoWallet.isWalletAvailable()</code> is a <em>suspend function</em> so it must be called within a <em>kotlin coroutine</em>.</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">        coroutineScope.launch {
+            try {
+                val isWalletAvailable: Boolean = accessoWallet.isWalletAvailable()
+            } catch (e: Exception) {
+                
+            }
+        }
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Save a pass to Google Wallet" duration="0">
+        <ul>
+<li>First make a call to the <code>addToWallet()</code> function and pass the PassRequest object with all fields completed.</li>
+<li>Note <code>AccessoWallet.addToWallet()</code> is a <em>suspend function</em> so it must be called within a <em>kotlin coroutine</em>.</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">        coroutineScope.launch {
+            try {
+                accessoWallet.addToWallet(passRequest)
+            } catch (e: Exception) {
+                
+            }
+        }
+</code></pre>
+<ul>
+<li>This will open Google Wallet on the device and prompt the user to save the pass to their Google Wallet.</li>
+<li>(Optional) In the application&#39;s activity, override onActivityResult to react to the success or failure of adding to Google Wallet.</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+    
+        if (requestCode == accessoWallet.addToGoogleWalletRequestCode) {
+            when (resultCode) {
+                RESULT_OK -&gt; {
+                    // Pass saved successfully
+                }
+
+                RESULT_CANCELED -&gt; {
+                    // Save operation canceled
+                }
+
+                PayClient.SavePassesResult.SAVE_ERROR -&gt; data?.let { intentData -&gt;
+                    val errorMessage = intentData.getStringExtra(PayClient.EXTRA_API_ERROR_MESSAGE)
+                    // Handle error
+                }
+
+                else -&gt; {
+                    // Handle unexpected (non-API) exception
+                }
+            }
+        }
+    }
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Update a pass in Google Wallet" duration="0">
+        <ul>
+<li>This will update an existing pass in the user&#39;s Google Wallet. Note that the PassRequest.id field</li>
+<li>in the update must match the PassRequest.id field in the existing object.</li>
+<li><ul>
+<li>Note <code>AccessoWallet.updatePass()</code> is a <em>suspend function</em> so it must be called within a <em>kotlin coroutine</em>.</li>
+</ul>
+</li>
+</ul>
+<pre><code language="language-kotlin" class="language-kotlin">    coroutineScope.launch{
+        try {
+            accessoWallet.updatePass(passRequest)
+        } catch (e: Exception) {
+            
+        }
+    }
+</code></pre>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

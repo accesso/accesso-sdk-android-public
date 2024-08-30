@@ -1,0 +1,26 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2024-08-30T16:19:14Z",
+  "id": "accesso-queueing-tutorial",
+  "duration": 20,
+  "title": "Module Queueing - Developer User Guide for Accesso SDK for Android",
+  "authors": "Jeff Koretke",
+  "summary": "Developer User Guide for the Accesso Queueing SDK for Android",
+  "source": "../../../AccessoQueueing/tutorial.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown"
+  ],
+  "tags": [
+    "accesso"
+  ],
+  "feedback": "https://github.com/accesso/accesso-sdk-android",
+  "url": "accesso-queueing-tutorial"
+}

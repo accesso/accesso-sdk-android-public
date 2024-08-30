@@ -1,0 +1,76 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.accessosdk.accessocommerce.composables////PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.composables/index.html
+$dokka.location:com.accessosdk.accessocommerce.composables//FeaturedSection/#kotlin.collections.List[com.accessosdk.accessocommerce.models.StoreProduct]/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.composables/-featured-section.html
+$dokka.location:com.accessosdk.accessocommerce.composables//PreviewFeaturedSection/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.composables/-preview-featured-section.html
+$dokka.location:com.accessosdk.accessocommerce.composables//PreviewStoreProductComposable/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.composables/-preview-store-product-composable.html
+$dokka.location:com.accessosdk.accessocommerce.composables//StoreItemImage/#kotlin.String#androidx.compose.ui.Modifier/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.composables/-store-item-image.html
+$dokka.location:com.accessosdk.accessocommerce.composables//StoreProductComposable/#com.accessosdk.accessocommerce.models.StoreProduct/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.composables/-store-product-composable.html
+$dokka.location:com.accessosdk.accessocommerce.composables//getSampleStoreProducts/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.composables/get-sample-store-products.html
+$dokka.location:com.accessosdk.accessocommerce.composables/StoreActivity///PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.composables/-store-activity/index.html
+$dokka.location:com.accessosdk.accessocommerce.composables/StoreActivity/StoreActivity/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.composables/-store-activity/-store-activity.html
+$dokka.location:com.accessosdk.accessocommerce.interfaces////PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.interfaces/index.html
+$dokka.location:com.accessosdk.accessocommerce.interfaces/IAccessoCommerce///PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.interfaces/-i-accesso-commerce/index.html
+$dokka.location:com.accessosdk.accessocommerce.interfaces/IAccessoCommerce/getStoreProducts/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.interfaces/-i-accesso-commerce/get-store-products.html
+$dokka.location:com.accessosdk.accessocommerce.interfaces/IAccessoCommerce/showStoreProducts/#android.content.Context/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.interfaces/-i-accesso-commerce/show-store-products.html
+$dokka.location:com.accessosdk.accessocommerce.interfaces/ICommerceService///PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.interfaces/-i-commerce-service/index.html
+$dokka.location:com.accessosdk.accessocommerce.interfaces/ICommerceService/getStoreProducts/#kotlin.String?/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.interfaces/-i-commerce-service/get-store-products.html
+$dokka.location:com.accessosdk.accessocommerce.interfaces/IStoreProductService///PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.interfaces/-i-store-product-service/index.html
+$dokka.location:com.accessosdk.accessocommerce.interfaces/IStoreProductService/getStoreProducts/#com.accessosdk.accessocommerce.repository.CommerceRepository/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.interfaces/-i-store-product-service/get-store-products.html
+$dokka.location:com.accessosdk.accessocommerce.models////PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/index.html
+$dokka.location:com.accessosdk.accessocommerce.models/Detail///PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-detail/index.html
+$dokka.location:com.accessosdk.accessocommerce.models/Detail/Detail/#kotlin.String?#kotlin.String#kotlin.collections.List[com.accessosdk.accessocommerce.models.ProductImage]?#kotlin.String?#kotlin.collections.Map[kotlin.String,kotlin.String]?/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-detail/-detail.html
+$dokka.location:com.accessosdk.accessocommerce.models/Detail/description/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-detail/description.html
+$dokka.location:com.accessosdk.accessocommerce.models/Detail/id/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-detail/id.html
+$dokka.location:com.accessosdk.accessocommerce.models/Detail/images/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-detail/images.html
+$dokka.location:com.accessosdk.accessocommerce.models/Detail/label/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-detail/label.html
+$dokka.location:com.accessosdk.accessocommerce.models/Detail/value/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-detail/value.html
+$dokka.location:com.accessosdk.accessocommerce.models/ProductImage///PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-product-image/index.html
+$dokka.location:com.accessosdk.accessocommerce.models/ProductImage/ProductImage/#kotlin.Int?#kotlin.String?#kotlin.String?#kotlin.Int?/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-product-image/-product-image.html
+$dokka.location:com.accessosdk.accessocommerce.models/ProductImage/height/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-product-image/height.html
+$dokka.location:com.accessosdk.accessocommerce.models/ProductImage/resolution/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-product-image/resolution.html
+$dokka.location:com.accessosdk.accessocommerce.models/ProductImage/src/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-product-image/src.html
+$dokka.location:com.accessosdk.accessocommerce.models/ProductImage/width/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-product-image/width.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct///PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/index.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/StoreProduct/#kotlin.String?#kotlin.collections.List[com.accessosdk.accessocommerce.models.Detail]?#kotlin.collections.Map[kotlin.String,kotlin.String]?#kotlin.String#kotlin.collections.List[com.accessosdk.accessocommerce.models.ProductImage]?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.collections.List[com.accessosdk.accessocommerce.models.ProductImage]?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.Boolean?#kotlin.String?/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/-store-product.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/description/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/description.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/details/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/details.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/extensionField/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/extension-field.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/featuredMessage/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/featured-message.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/id/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/id.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/infoImages/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/info-images.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/isFeatured/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/is-featured.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/label/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/label.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/lastChanged/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/last-changed.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/lastChangedBy/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/last-changed-by.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/mainImage/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/main-image.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/purchaseLink/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/purchase-link.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/purchasePhone/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/purchase-phone.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/status/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/status.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/trackingPurchaseLinkPostfix/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/tracking-purchase-link-postfix.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/type/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/type.html
+$dokka.location:com.accessosdk.accessocommerce.models/StoreProduct/venueId/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.models/-store-product/venue-id.html
+$dokka.location:com.accessosdk.accessocommerce.viewmodels////PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.viewmodels/index.html
+$dokka.location:com.accessosdk.accessocommerce.viewmodels/StoreProductCallbacks///PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.viewmodels/-store-product-callbacks/index.html
+$dokka.location:com.accessosdk.accessocommerce.viewmodels/StoreProductCallbacks/getStoreProducts/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.viewmodels/-store-product-callbacks/get-store-products.html
+$dokka.location:com.accessosdk.accessocommerce.viewmodels/StoreProductCallbacks/isLoading/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.viewmodels/-store-product-callbacks/is-loading.html
+$dokka.location:com.accessosdk.accessocommerce.viewmodels/StoreProductCallbacks/storeProductLiveData/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.viewmodels/-store-product-callbacks/store-product-live-data.html
+$dokka.location:com.accessosdk.accessocommerce.viewmodels/StoreProductsViewModel.Companion///PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.viewmodels/-store-products-view-model/-companion/index.html
+$dokka.location:com.accessosdk.accessocommerce.viewmodels/StoreProductsViewModel.Companion/TAG/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.viewmodels/-store-products-view-model/-companion/-t-a-g.html
+$dokka.location:com.accessosdk.accessocommerce.viewmodels/StoreProductsViewModel///PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.viewmodels/-store-products-view-model/index.html
+$dokka.location:com.accessosdk.accessocommerce.viewmodels/StoreProductsViewModel/StoreProductsViewModel/#com.accesso.viewmodels.DialogViewModel/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.viewmodels/-store-products-view-model/-store-products-view-model.html
+$dokka.location:com.accessosdk.accessocommerce.viewmodels/StoreProductsViewModel/getStoreProducts/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.viewmodels/-store-products-view-model/get-store-products.html
+$dokka.location:com.accessosdk.accessocommerce.viewmodels/StoreProductsViewModel/isLoading/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.viewmodels/-store-products-view-model/is-loading.html
+$dokka.location:com.accessosdk.accessocommerce.viewmodels/StoreProductsViewModel/storeProductLiveData/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce.viewmodels/-store-products-view-model/store-product-live-data.html
+$dokka.location:com.accessosdk.accessocommerce////PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce/index.html
+$dokka.location:com.accessosdk.accessocommerce/AccessoCommerce.Companion///PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce/-accesso-commerce/-companion/index.html
+$dokka.location:com.accessosdk.accessocommerce/AccessoCommerce///PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce/-accesso-commerce/index.html
+$dokka.location:com.accessosdk.accessocommerce/AccessoCommerce/AccessoCommerce/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce/-accesso-commerce/-accesso-commerce.html
+$dokka.location:com.accessosdk.accessocommerce/AccessoCommerce/getStoreProducts/#/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce/-accesso-commerce/get-store-products.html
+$dokka.location:com.accessosdk.accessocommerce/AccessoCommerce/showStoreProducts/#android.content.Context/PointingToDeclaration/-accesso-commerce/com.accessosdk.accessocommerce/-accesso-commerce/show-store-products.html
+com.accessosdk.accessocommerce
+com.accessosdk.accessocommerce.composables
+com.accessosdk.accessocommerce.interfaces
+com.accessosdk.accessocommerce.models
+com.accessosdk.accessocommerce.viewmodels
+

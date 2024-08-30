@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AccessoExperiencePromoter</title>
+    <link href="images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
+<link href="styles/style.css" rel="Stylesheet">
+<link href="styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="styles/main.css" rel="Stylesheet">
+<link href="styles/prism.css" rel="Stylesheet">
+<link href="styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="index.html">
+                    <span>AccessoExperiencePromoter</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":AccessoExperiencePromoter:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="AccessoExperiencePromoter::////PointingToDeclaration//1858809255">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Accesso</span><wbr></wbr><span>Experience</span><wbr></wbr><span><span>Promoter</span></span></h1>
+    <div class="platform-hinted UnderCoverText" data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AccessoExperiencePromoter:dokkaHtml/release"><p class="paragraph">Developer User Guide for the Accesso Experience Promoter SDK for Android</p><h2 class=""> Installing the SDK</h2><ol><li><p class="paragraph">Place the <strong>AccessoExperiencePromoter-release.aar</strong> file and the <strong>AccessoCore-release.aar</strong> file within the <i>app/libs</i> directory.</p></li><li><p class="paragraph">Include a dependency to the the SDK in the module-level <i>build.gradle</i> file and add required dependencies</p></li></ol><div class="sample-container"><pre><code class="block lang-groovy" theme="idea">    implementation(files(&quot;libs/AccessoExperiencePromoter-release.aar&quot;))<br>    implementation(files(&quot;libs/AccessoCore-release.aar&quot;))<br>    implementation(&quot;com.squareup.retrofit2:retrofit:2.9.0&quot;)<br>    implementation(&quot;com.squareup.retrofit2:converter-gson:2.9.0&quot;)<br>    implementation(&quot;org.altbeacon:android-beacon-library:2.19.4&quot;)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ol><li><p class="paragraph">Add required permissions and replace theme.</p></li></ol><div class="sample-container"><pre><code class="block lang-xml" theme="idea">    &lt;manifest&gt;<br>        &lt;uses-permission android:name=&quot;android.permission.ACCESS_COARSE_LOCATION&quot; /&gt;<br>        &lt;uses-permission android:name=&quot;android.permission.ACCESS_FINE_LOCATION&quot; /&gt;<br>        &lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;<br>        &lt;application&gt;<br>            tools:replace=&quot;android:theme&quot;<br>        &lt;/application&gt;<br>    &lt;/manifest&gt;</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ol><li><p class="paragraph">Sync gradle.</p></li></ol><h2 class=""> Setup SDK Configurations</h2><ol><li><p class="paragraph">Place the <strong>accesso-services.json</strong> file within the <i>app/src/main/assets</i> directory</p></li><li><p class="paragraph">The SDK will read the config files on initialization</p></li></ol><h2 class=""> Initializing the SDK</h2><ul><li><p class="paragraph">Before requesting messages, initialize the SDK with the required builder functions.</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">        AccessoCore<br>            .setAppUserId(appUserId)<br>            .setApplicationContext(applicationContext)<br>            .setActivity(activity)<br>            .build()</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ul><li><p class="paragraph"><code class="lang-kotlin">appUserId</code> is the UUID of the device</p></li><li><p class="paragraph"><code class="lang-kotlin">applicationContext</code> is the context of the host application</p></li><li><p class="paragraph"><code class="lang-kotlin">activity</code> is the activity that initializes the SDK</p></li><li><p class="paragraph"><code class="lang-kotlin">build()</code> must be called after setting configurations</p></li><li><p class="paragraph">Create an instance of AccessoExperiencePromoter</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    val accessoExperiencePromoter = AccessoExperiencePromoter()</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Optional Builder Functions</h2><ul><li><p class="paragraph">To begin detecting beacons, add the <code class="lang-kotlin">setOnBeaconRegionDetection</code> builder function.</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">        AccessoCore<br>            .setAppUserId(appUserId)<br>            .setApplicationContext(applicationContext)<br>            .setActivity(activity)<br>            .setOnBeaconRegionDetection(onBeaconRegionDetection)<br>            .build()</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ul><li><p class="paragraph"><code class="lang-kotlin">onBeaconRegionDetection</code> is a callback function to get notified of enter/exit events in a given region.</p></li></ul><h2 class=""> Retrieving Messages</h2><ul><li><p class="paragraph">After AccessoCore has been configured, you can begin calling methods needed for your application, such as <code class="lang-kotlin">getMessages(venueId)</code>.</p></li><li><p class="paragraph">venueId is an optional parameter to get messages associated with that venueId</p></li><li><p class="paragraph">Note <code class="lang-kotlin">AccessoExperiencePromoter.getMessages</code> is a <i>suspend function</i> so it must be called within a <i>kotlin coroutine</i></p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">        coroutineScope.launch {<br>            try {<br>                val messages = AccessoExperiencePromoter.getMessages(venueId)<br>            } catch (e: Exception) {<br>                <br>            }<br>        }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ul><li><p class="paragraph"><code class="lang-kotlin">AccessoExperiencePromoter.getMessages()</code> returns a <code class="lang-kotlin">Response&lt;List&lt;MessageResponse?&gt;&gt;</code></p></li></ul><h2 class=""> Enable Push Notifications</h2><ul><li><p class="paragraph">Setup a push notification service of your choice (such as <a href="https://firebase.google.com/docs/cloud-messaging/android/first-message">Firebase</a>)</p></li><li><p class="paragraph">Prompt the user to enable push notifications through your application</p></li><li><p class="paragraph">Once a notification is received call again getAllMessages() to refresh the list of messages.</p></li></ul><h2 class=""> Track Entering or Exiting the Area of a Beacon</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    coroutineScope.launch{<br>        try {<br>            val trackerApiResponse: Response&lt;TrackerAPIResponse&gt; = AccessoExperiencePromoter.trackBeaconDetectChange(BeaconStatus.ENTER, beaconEvent)<br>        } catch (e: Exception) {<br>            <br>        }<br>    }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Track Location Update</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    coroutineScope.launch {<br>        try {<br>            val trackerApiResponse: Response&lt;TrackerAPIResponse&gt; = AccessoExperiencePromoter.trackDeviceLocation(regionEvent)<br>        } catch (e: Exception) {<br>            <br>        }<br>    }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Track Message Action</h2><ul><li><p class="paragraph">Updates the Experience Promoter Service when a device wishes to report a message action has occurred</p></li><li><p class="paragraph">The possible message actions are: <code class="lang-kotlin">PushWhileOpen</code>, <code class="lang-kotlin">PushWhileNotOpen</code>,<code class="lang-kotlin">Received</code>, <code class="lang-kotlin">Read</code></p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">     coroutineScope.launch {<br>        try {<br>            val trackerApiResponse: Response&lt;TrackerAPIResponse&gt; = AccessoExperiencePromoter.trackMessageAction(messageActionEvent)<br>        } catch (e: Exception) {<br>            <br>        }<br>     }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Track Message Link Tapped</h2><ul><li><p class="paragraph">Alert the Experience Promoter Service that a link in a message has been tapped</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">     coroutineScope.launch {<br>        try {<br>            val trackerApiResponse: Response&lt;TrackerAPIResponse&gt; = AccessoExperiencePromoter.trackMessageLinkTapped(messageLinkTappedEvent)<br>        } catch (e: Exception) {<br>    <br>        }<br>     }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Track App Notification State</h2><ul><li><p class="paragraph">Alert the Experience Promoter Service with whether the device has allowed push notifications for the host application</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">     coroutineScope.launch {<br>        try {<br>            val trackerApiResponse: Response&lt;TrackerAPIResponse&gt; = AccessoExperiencePromoter.trackAppNotificationState(appNotificationStateEvent)<br>        } catch (e: Exception) {<br>    <br>        }<br>     }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Start Updating Location</h2><ul><li><p class="paragraph">Start updating location by calling the function</p></li></ul><h3 class=""> Via Calling startUpdatingLocation</h3><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    accessoExperiencePromoter.startUpdatingLocation(<br>        distanceMeters = distanceMeters,<br>        postLocationIntervalSecondsArg = postLocationIntervalSeconds,<br>        activity = activity<br>    )</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Fetch All Beacon Regions</h2><ul><li><p class="paragraph">Retrieve all of the beacon regions for a venue via the Experience Promoter Service.</p></li><li><p class="paragraph">This function must not be called with <code class="lang-kotlin">GlobalScope</code>.</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">     coroutineScope.launch {<br>        try {<br>            val beaconsResponse: Response&lt;List&lt;BeaconRegion&gt;&gt; = AccessoExperiencePromoter.getBeaconRegions()<br>        } catch (e: Exception) {<br>            <br>        }<br>     }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Start Listening for Beacons Given the Beacon Regions</h2><ul><li><p class="paragraph">After fetching the beacon regions, if you would like to start monitoring specific regions, this is how you can call the listen function.</p></li><li><p class="paragraph">This function must not be called with <code class="lang-kotlin">GlobalScope</code>.</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">     val beaconListener: (BeaconRegion, Int) -&gt; Unit = { beaconRegion, state -&gt;<br>        if (state == EnterExit.ENTER.ordinal) {<br>            Log.d(<br>                &quot;SampleAppBeacons&quot;,<br>                &quot;Entered beacon range for beaconRegion=${beaconRegion}&quot;<br>            )<br>        } else {<br>            Log.d(<br>                &quot;SampleAppBeacons&quot;,<br>                &quot;Exited beacon range for beaconRegion=${beaconRegion}&quot;<br>            )<br>        }<br>    }<br><br>     coroutineScope.launch {<br>          AccessoExperiencePromoter.startListeningForBeaconRegions(beaconRegions, beaconListener)<br>     }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Stop Listening for Beacons Given the Beacon Regions</h2><ul><li><p class="paragraph">After <code class="lang-kotlin">startListeningForBeaconRegions</code> is called, you can call <code class="lang-kotlin">stopListeningForBeaconRegions</code> at anytime with the given <code class="lang-kotlin">beaconRegion</code>s to stop listening to them. If you provide no regions to the call, it will stop listening to all beacon regions.</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">     coroutineScope.launch {<br>          AccessoExperiencePromoter.stopListeningForBeaconRegions()<br>     }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Fetch Points of Interest</h2><ul><li><p class="paragraph">Fetch all Points of Interest for a venue</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    coroutineScope.launch {<br>        val pointsOfInterest: Response&lt;List&lt;PointOfInterest&gt;&gt; = AccessoExperiencePromoter.fetchPointsOfInterest().body()<br>    }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Get Display Categories</h2><ul><li><p class="paragraph">Fetch Display Categories for a venue</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    coroutineScope.launch {<br>        val displayCategories: DisplayCategories = AccessoExperiencePromoter.getDisplayCategories().body()<br>        val categories = displayCategories.categories<br>        val pointsOfInterest = displayCategories.poi<br>    }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Search Points of Interest</h2><ul><li><p class="paragraph">Search for specific points of interest with the given search criteria</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    coroutineScope.launch {<br>        val pointOfInterests: List&lt;PointOfInterest&gt; = <br>            AccessoExperiencePromoter.searchPointsOfInterest(<br>                pointsOfInterest: List&lt;PointOfInterest&gt;, <br>                searchCriteria: String<br>            )<br>    }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Get Points of Interest Filtered by Provided Categories</h2><ul><li><p class="paragraph">Search for specific points of interest with the given search criteria</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    coroutineScope.launch {<br>        val filteredPointsOfInterest: List&lt;PointOfInterest&gt; = <br>            AccessoExperiencePromoter.getPointsOfInterestByCategories(<br>                categories: List&lt;Category&gt;, <br>                pointsOfInterest: List&lt;PointOfInterest&gt;<br>            )<br>    }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Prompt for Bluetooth permissions</h2><ul><li><p class="paragraph">Use the helper function prompt the user for bluetooth permissions</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">viewModelScope.launch {<br>    accessoExperiencePromoter.promptForLocationPermission()<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Prompt for Location permissions</h2><ul><li><p class="paragraph">Use the helper function prompt the user for bluetooth permissions</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">viewModelScope.launch {<br>    accessoExperiencePromoter.promptForLocationPermission()<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Getting and showing events</h2><ul><li><p class="paragraph">If you want the SDK to handle retrieving events and handling all UI components including a list and detail screen for events, you have the option to simply just call showEvents like so.</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">try {<br>    accessoExperiencePromoter.showEvents(context = context, days =  10)<br>}<br>catch (e: Exception) {<br>    <br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ul><li><p class="paragraph">Or you can choose to retrieve the events manually if needed with the getEvents call.</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">coroutineScope.launch {<br>    try {<br>        val events = accessoExperiencePromoter.getEvents()<br>        } <br>    catch (e: Exception) {<br>    <br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Search Events</h2><ul><li><p class="paragraph">Search for events via a string of search terms</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    val searchedEvents: List&lt;Event&gt; = accessoExperiencePromoter.searchEvents(&quot;Search text&quot;)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+  <h2 class="">Packages</h2>
+  <div class="table"><a data-name="-1679935664%2FPackages%2F1858809255" anchor-label="com.accessosdk.experiencepromoter" id="-1679935664%2FPackages%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-experience-promoter/com.accessosdk.experiencepromoter/index.html">com.accessosdk.experiencepromoter</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1679935664%2FPackages%2F1858809255"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1989155165%2FPackages%2F1858809255" anchor-label="com.accessosdk.experiencepromoter.composables.events" id="-1989155165%2FPackages%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-experience-promoter/com.accessosdk.experiencepromoter.composables.events/index.html">com.accessosdk.experiencepromoter.composables.events</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1989155165%2FPackages%2F1858809255"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="807702731%2FPackages%2F1858809255" anchor-label="com.accessosdk.experiencepromoter.model" id="807702731%2FPackages%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-experience-promoter/com.accessosdk.experiencepromoter.model/index.html">com.accessosdk.experiencepromoter.model</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="807702731%2FPackages%2F1858809255"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="973710560%2FPackages%2F1858809255" anchor-label="com.accessosdk.experiencepromoter.model.events" id="973710560%2FPackages%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-experience-promoter/com.accessosdk.experiencepromoter.model.events/index.html">com.accessosdk.experiencepromoter.model.events</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="973710560%2FPackages%2F1858809255"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-277623140%2FPackages%2F1858809255" anchor-label="com.accessosdk.experiencepromoter.model.eventsCategories" id="-277623140%2FPackages%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-experience-promoter/com.accessosdk.experiencepromoter.model.eventsCategories/index.html">com.accessosdk.experiencepromoter.model.eventsCategories</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-277623140%2FPackages%2F1858809255"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="411796346%2FPackages%2F1858809255" anchor-label="com.accessosdk.experiencepromoter.viewmodels.events" id="411796346%2FPackages%2F1858809255" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":AccessoExperiencePromoter:dokkaHtml/release" data-filterable-set=":AccessoExperiencePromoter:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-accesso-experience-promoter/com.accessosdk.experiencepromoter.viewmodels.events/index.html">com.accessosdk.experiencepromoter.viewmodels.events</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="411796346%2FPackages%2F1858809255"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>Accesso</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

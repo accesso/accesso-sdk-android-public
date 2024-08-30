@@ -1,0 +1,33 @@
+{
+  "COLOR_CONFIG": {
+    "primary": "#FFFFFF",
+    "primarylight": "#4B4C99",
+    "primaryDark": "#12134C",
+    "secondary": "#0073E6",
+    "secondaryLight": "#338FEB",
+    "secondaryDark": "#00458A",
+    "tertiary": "#3A22DD",
+    "tertiaryLight": "#614EE3",
+    "tertiaryDark": "#221484",
+    "backgroundlight": "#F8F8F8",
+    "backgroundDark": "#222222",
+    "textWhite": "#FFFFFF",
+    "textDark": "#1A1A1A",
+    "buttonPrimary": "#1F2080",
+    "buttonSecondary": "#0073E6",
+    "success": "#008577",
+    "warning": "#FFCD29",
+    "error": "#DE1B3C",
+    "disabledLight": "#E0E0E0",
+    "disabledDark": "#424242",
+    "grayScale4": "#D8D8D8"
+  },
+  "CORNER_RADIUS_CONFIG": {
+    "buttonRadius": 8,
+    "tileRadius": 8,
+    "contentCardRadius": 16
+  },
+  "FONT_CONFIG": {
+    "customFont": "correct_name_here.ttf"
+  }
+}
